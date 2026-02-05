@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Jianhua Gao's Homepage"
+title                    : "BNU-SYS LAB's Homepage"
 title_separator          : "-"
-name                     : &name "Jianhua Gao"
-description              : &description "A PhD Candidate"
-url                      : https://double-flower.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : &name "BNU-SYS"
+description              : &description "A research lab focusing on computer system"
+url                      : https://bnu-sys.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "double-flower/double-flower.github.io"
+repository               : "bnu-sys/bnu-sys.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
