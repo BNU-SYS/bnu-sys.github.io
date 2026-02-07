@@ -1,99 +1,68 @@
 ---
-title: "成果展示"
+title: "团队成果"
 permalink: /achievements/
 layout: single
 author_profile: false
 classes: wide
-description: "BNU-SYS 团队成果：论文、专利与软件系统。"
+description: "Star-Lab 团队成果：论文、专利与软件。"
 ---
 
-<section class="results-hero">
-  <!-- <h1>团队成果</h1> -->
-  <p>围绕计算机体系结构、并行与高性能计算、代码分析与优化、大模型推理优化等方向，持续产出高质量成果。</p>
-</section>
+{% for y in site.data.achievements.years %}
+<h2 class="ach-year">{{ y.year }}</h2>
 
-{% assign paper_count = site.data.achievements.papers | size %}
-{% assign patent_count = site.data.achievements.patents | size %}
-{% assign software_count = site.data.achievements.software | size %}
-
-<!-- <div class="results-metrics">
-  <div class="metric-card">
-    <div class="metric-value">{{ paper_count }}</div>
-    <div class="metric-label">论文</div>
+{% for p in y.papers %}
+<div class="ach-item">
+  <div class="ach-thumb-wrap">
+    <img
+      class="ach-thumb"
+      src="{{ p.thumb | default: '/images/papers/default.png' | relative_url }}"
+      alt="{{ p.title | escape }}"
+      loading="lazy"
+    >
   </div>
-  <div class="metric-card">
-    <div class="metric-value">{{ patent_count }}</div>
-    <div class="metric-label">专利</div>
-  </div>
-  <div class="metric-card">
-    <div class="metric-value">{{ software_count }}</div>
-    <div class="metric-label">软件</div>
-  </div>
-</div> -->
 
----
+  <div class="ach-main">
+    <div class="ach-line"><strong>Authors:</strong> {{ p.authors }}</div>
+    <div class="ach-line"><strong>Title:</strong> {{ p.title }}</div>
+    <div class="ach-line"><strong>Venue:</strong> {{ p.venue }}</div>
+    <div class="ach-line"><strong>Year:</strong> {{ p.year }}</div>
 
-## 论文（Papers）
-
-{% assign papers_sorted = site.data.achievements.papers | sort: "year" | reverse %}
-{% for p in papers_sorted %}
-<div class="result-item">
-  <div class="result-year">{{ p.year }}</div>
-  <div class="result-body">
-    <h3>{{ p.title }}</h3>
-    <p class="meta">
-      <strong>{{ p.venue }}</strong> · {{ p.type }}<br/>
-      {{ p.authors }}
-    </p>
-    <p class="links">
-      {% if p.links.paper %}<a href="{{ p.links.paper }}" target="_blank" rel="noopener">Paper</a>{% endif %}
-      {% if p.links.code %} · <a href="{{ p.links.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
-    </p>
+    <div class="ach-links">
+      {% if p.pdf %}<a href="{{ p.pdf }}" target="_blank" rel="noopener">[PDF]</a>{% endif %}
+      {% if p.slides %}<a href="{{ p.slides }}" target="_blank" rel="noopener">[Slides]</a>{% endif %}
+      {% if p.doi %}<a href="{{ p.doi }}" target="_blank" rel="noopener">[DOI]</a>{% endif %}
+      {% if p.bibtex %}<a href="{{ p.bibtex }}" target="_blank" rel="noopener">[Bibtex]</a>{% endif %}
+      {% if p.code %}<a href="{{ p.code }}" target="_blank" rel="noopener">[Code]</a>{% endif %}
+    </div>
   </div>
 </div>
 {% endfor %}
-
----
-
-## 专利（Patents）
-
-{% assign patents_sorted = site.data.achievements.patents | sort: "year" | reverse %}
-{% for t in patents_sorted %}
-<div class="result-item">
-  <div class="result-year">{{ t.year }}</div>
-  <div class="result-body">
-    <h3>{{ t.title }}</h3>
-    <p class="meta">
-      专利号：{{ t.number }}<br/>
-      状态：{{ t.status }}<br/>
-      发明人：{{ t.inventors }}
-    </p>
-    {% if t.links.doc %}
-    <p class="links"><a href="{{ t.links.doc }}" target="_blank" rel="noopener">专利文档</a></p>
-    {% endif %}
-  </div>
-</div>
 {% endfor %}
 
----
-
-## 软件（Software）
-
-{% assign software_sorted = site.data.achievements.software | sort: "year" | reverse %}
-{% for s in software_sorted %}
-<div class="result-item">
-  <div class="result-year">{{ s.year }}</div>
-  <div class="result-body">
-    <h3>{{ s.name }}</h3>
-    <p class="meta">
-      类型：{{ s.category }}<br/>
-      版本：{{ s.version }}<br/>
-      {{ s.description }}
-    </p>
-    <p class="links">
-      {% if s.links.repo %}<a href="{{ s.links.repo }}" target="_blank" rel="noopener">Repository</a>{% endif %}
-      {% if s.links.demo %} · <a href="{{ s.links.demo }}" target="_blank" rel="noopener">Demo</a>{% endif %}
-    </p>
-  </div>
+{% if site.data.achievements.patents and site.data.achievements.patents.size > 0 %}
+<h2 class="ach-module-title">专利</h2>
+<div class="ach-block">
+  <ul>
+    {% for t in site.data.achievements.patents %}
+    <li>
+      <strong>{{ t.name }}</strong>（{{ t.type }}，{{ t.year }}，{{ t.number }}）
+      {% if t.link %}<a href="{{ t.link }}" target="_blank" rel="noopener">[链接]</a>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
 </div>
-{% endfor %}
+{% endif %}
+
+{% if site.data.achievements.software and site.data.achievements.software.size > 0 %}
+<h2 class="ach-module-title">软件</h2>
+<div class="ach-block">
+  <ul>
+    {% for s in site.data.achievements.software %}
+    <li>
+      <strong>{{ s.name }}</strong>（{{ s.year }}，登记号：{{ s.reg_no }}）
+      {% if s.link %}<a href="{{ s.link }}" target="_blank" rel="noopener">[链接]</a>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}

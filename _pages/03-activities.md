@@ -1,5 +1,5 @@
 ---
-title: "团队新闻"
+title: "新闻速递"
 permalink: /activities/
 layout: single
 author_profile: false
@@ -7,11 +7,11 @@ classes: wide news-page
 description: "Star-Lab 团队新闻：团建活动、学术会议/报告、竞赛获奖"
 ---
 
-<div class="news-index-nav">
+<!-- <div class="news-index-nav">
   <a href="#team-building">团建活动</a>
   <a href="#conference-report">学术会议 / 报告</a>
   <a href="#competition-award">竞赛获奖</a>
-</div>
+</div> -->
 
 ## 团建活动 {#team-building}
 

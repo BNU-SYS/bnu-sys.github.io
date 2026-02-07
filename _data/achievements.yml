@@ -1,50 +1,17 @@
-papers:
-  - year: 2026
-    title: "Example Paper Title A"
-    venue: "ICME 2026"
-    type: "Conference"
-    authors: "A. Author, B. Author, C. Author"
-    links:
-      paper: "https://example.com/paper-a"
-      code: "https://github.com/BNU-SYS/example-a"
+years:
+- year: 2026
+  papers:
+  - authors: Tianyang Liu, Jiawei Ye, Weixing Ji
+    title: 'JDExtractor: an automated approach for efficient extraction of defect-related
 
-  - year: 2025
-    title: "Example Paper Title B"
-    venue: "TBD Journal"
-    type: "Journal"
-    authors: "A. Author, D. Author"
-    links:
-      paper: "https://example.com/paper-b"
-
-patents:
-  - year: 2025
-    title: "一种面向大模型推理的缓存优化方法"
-    number: "CN2025XXXXXX.X"
-    status: "已公开"
-    inventors: "计卫星, 高建花, 石剑君"
-    links:
-      doc: "https://example.com/patent-1"
-
-  - year: 2024
-    title: "一种并行编译优化系统及方法"
-    number: "CN2024XXXXXX.X"
-    status: "受理中"
-    inventors: "刘秉鑫, 计卫星"
-
-software:
-  - year: 2025
-    name: "StarInfer"
-    category: "推理优化框架"
-    description: "面向大模型推理的系统级优化工具链。"
-    version: "v1.0.0"
-    links:
-      repo: "https://github.com/BNU-SYS/starinfer"
-      demo: "https://example.com/starinfer-demo"
-
-  - year: 2024
-    name: "StarOpt"
-    category: "代码分析与优化"
-    description: "用于程序静态分析与自动优化的实验平台。"
-    version: "v0.9.2"
-    links:
-      repo: "https://github.com/BNU-SYS/staropt"
+      methods in Java projects'
+    venue: Autom. Softw. Eng.
+    year: 2026
+    thumb: /images/papers/default.png
+    pdf: https://doi.org/10.1007/s10515-025-00563-z
+    slides: ''
+    doi: https://doi.org/10.1007/S10515-025-00563-Z
+    bibtex: ''
+    code: ''
+patents: []
+software: []
