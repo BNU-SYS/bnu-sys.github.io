@@ -425,3 +425,112 @@
   text-decoration: underline;
 }
 
+/* ===== Star-Lab Members (same-size photo cards) ===== */
+.members-page .page__content h2 {
+  margin-top: 1.3rem;
+  border-left: 4px solid #1f4e79;
+  padding-left: 10px;
+}
+
+.members-page .page__content h3 {
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 210px); /* 大屏固定4列，效果接近你图里布局 */
+  gap: 34px 38px;
+  justify-content: start;
+  margin: 10px 0 20px 0;
+}
+
+.member-card {
+  border: 1px solid #e5e7eb;
+  background: #f5f5f5;
+}
+
+.member-photo-shell {
+  padding: 8px;
+  background: #efefef;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* 关键：统一照片显示大小 */
+.member-photo {
+  width: 100% !important;
+  height: 300px !important;      /* 所有照片统一高度 */
+  object-fit: cover !important;  /* 自动裁切，保证同尺寸 */
+  object-position: center top !important;
+  display: block;
+  background: #e5e7eb;
+}
+
+.member-name {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #4b5563;
+  line-height: 1.2;
+  padding: 10px 6px 12px;
+}
+
+/* 教师附加信息块 */
+.faculty-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 420px));
+  gap: 16px;
+  margin: 6px 0 12px 0;
+}
+
+.faculty-info-card {
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  padding: 12px 14px;
+  border-radius: 4px;
+}
+
+.faculty-info-card h4 {
+  margin: 0 0 6px 0;
+  font-size: 1rem;
+}
+
+.faculty-info-card p {
+  margin: 6px 0;
+  color: #374151;
+  line-height: 1.7;
+}
+
+.faculty-info-card a {
+  color: #1f4e79;
+  text-decoration: none;
+}
+
+.faculty-info-card a:hover {
+  text-decoration: underline;
+}
+
+/* 响应式 */
+@media (max-width: 1200px) {
+  .member-grid {
+    grid-template-columns: repeat(3, 210px);
+  }
+}
+
+@media (max-width: 900px) {
+  .member-grid {
+    grid-template-columns: repeat(2, 210px);
+  }
+  .faculty-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .member-grid {
+    grid-template-columns: 1fr;
+  }
+  .member-card {
+    max-width: 260px;
+  }
+}
