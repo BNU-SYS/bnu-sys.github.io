@@ -282,7 +282,7 @@ description: "Star-Lab 课题组成员"
       <img class="member-photo" src="{{ '/images/members/ou-xueqian.jpg' | relative_url }}" alt="欧学谦"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="member-name">欧学谦</div>
+    <div class="member-name">欧学谦（2025级）</div>
   </div>
 </div>
 
