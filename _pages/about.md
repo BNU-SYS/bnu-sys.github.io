@@ -1,44 +1,63 @@
 ---
+title: "Star-Lab 课题组简介"
 permalink: /
-title: "Jianhua Gao"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+layout: single
+author_profile: false
+classes: wide
+description: "北京师范大学人工智能学院 Star-Lab，聚焦计算机体系结构、并行与高性能计算、代码分析与优化、大模型推理优化。"
 ---
 
-This is Jianhua Gao's personal homepage.
+<section class="star-hero">
+  <p class="star-kicker">Beijing Normal University · School of Artificial Intelligence</p>
+  <h1>Star-Lab</h1>
+  <p class="star-tagline">面向智能计算时代的系统底层研究</p>
+  <p class="star-summary">
+    Star-Lab 立足计算机系统核心问题，围绕“体系结构—编译优化—并行计算—大模型推理”开展系统化研究，
+    强调理论严谨、工程可复现与真实场景可落地。
+  </p>
 
-A short introduction
-======
-I am currently a postdoctoral researcher at the School of Artificial Intelligence at Beijing Normal University and collaborate with Prof. [HuangHua](https://vmcl.bnu.edu.cn/group/teacher/dcdaea79b5e54b75b532795109a85a34.htm) and [Weixing Ji](https://jiweixing.github.io/). I received the Ph.D. degree from the School of Computer Science and Technology at Beijing Institute of Technology in June 2023, under the supervisor of Prof. Feng Shi and [Weixing Ji](https://jiweixing.github.io/).
+  <div class="star-quicklinks">
+    <a class="star-btn" href="/members/">成员介绍</a>
+    <a class="star-btn star-btn-secondary" href="/activities/">团建活动</a>
+  </div>
+</section>
 
-Research interest 
-======
-Parallel and high performance computing
-* Optimization on sparse matrix computation, especially sparse matrix-vector multiplication (SpMV) and general sparse matrix-matrix multiplication (SpGEMM)
-* Performance optimization on GPU
+---
 
-Selected publications
-======
-**<u>Jianhua Gao</u>**, Bingjie Liu, Weixing Ji, and Hua Huang. [*A Systematic Literature Survey of Sparse Matrix-Vector Multiplication*](https://arxiv.org/abs/2404.06047). arXiv:2404.06047, [*github*](https://github.com/double-flower/SpMV-survey).
+## 研究方向
 
-**<u>Jianhua Gao</u>**, Weixing Ji, Fangli Chang, Shiyu Han, Bingxin Wei, Zeming Liu, and Yizhuo Wang. [*A Systematic Survey of General Sparse Matrix-matrix Multiplication*](https://doi.org/10.1145/3571157). ACM Computing Surveys (**CSUR, SCI一区**), vol. 55, no. 12, Article 244, Dec. 2023, pp. 1-36. doi: 10.1145/3571157
+<div class="star-grid">
+  <div class="star-card">
+    <h3>计算机体系结构</h3>
+    <p>面向高效智能计算的架构设计与优化，关注存储层次、执行效率与系统吞吐。</p>
+  </div>
+  <div class="star-card">
+    <h3>并行与高性能计算</h3>
+    <p>研究并行算法与系统协同优化，提升多核、多GPU及异构平台上的计算性能。</p>
+  </div>
+  <div class="star-card">
+    <h3>代码分析与优化</h3>
+    <p>围绕编译分析、程序表示与优化策略，提升程序执行效率与可维护性。</p>
+  </div>
+  <div class="star-card">
+    <h3>大模型推理优化</h3>
+    <p>聚焦推理链路中的延迟、吞吐与资源效率，探索系统层可部署优化方法。</p>
+  </div>
+</div>
 
-**<u>Jianhua Gao</u>**, Weixing Ji, Zhaonian Tan, Yizhuo Wang and Feng Shi, [*TaiChi: A Hybrid Compression Format for Binary Sparse Matrix-Vector Multiplication on GPU*](https://doi.org/10.1109/TPDS.2022.3170501), in IEEE Transactions on Parallel and Distributed Systems (**TPDS, CCF A类**), vol. 33, no. 12, pp. 3732-3745, 1 Dec. 2022, doi: 10.1109/TPDS.2022.3170501
+---
 
-**<u>Jianhua Gao</u>**, Weixing Ji, Jie Liu, Senhao Shao, Yizhuo Wang and Feng Shi, [*AMF-CSR: Adaptive Multi-Row Folding of CSR for SpMV on GPU*](https://doi.org/10.1109/ICPADS53394.2021.00058), in IEEE 27th International Conference on Parallel and Distributed Systems (ICPADS, CCF C类), 2021, pp. 418-425, doi: 10.1109/ICPADS53394.2021.00058.
+## 研究理念
 
-**<u>Jianhua Gao</u>**, Weixing Ji, Lulu Zhang, Anmin Li, Yizhuo Wang, Zongyu Zhang, [*Cube-based incremental outlier detection for streaming computing*]( https://doi.org/10.1016/j.ins.2019.12.060), in Information Sciences (**SCI一区**), vol. 517, pp. 361-376, May 2020, doi: 10.1016/j.ins.2019.12.060.
+- **学术严谨**：问题定义清晰，实验设计规范，结论可验证。  
+- **系统视角**：联合考虑算法、编译与硬件，追求端到端优化。  
+- **可复现性**：强调公开实现、实验可复现与工程可迁移。  
 
-**<u>Jianhua Gao</u>**, Weixing Ji, Lulu Zhang, Senhao Shao, Yizhuo Wang and Feng Shi, [*Fast Piecewise Polynomial Fitting of Time-Series Data for Streaming Computing*](https://doi.org/10.1109/ACCESS.2020.2976494), in IEEE Access, vol. 8, pp. 43764-43775, 2020, doi: 10.1109/ACCESS.2020.2976494.
+---
 
-Zhaonian Tan, Weixing Ji, **Jianhua Gao**, Yueyan Zhao, Akrem Benatia, Yizhuo Wang, Feng Shi, [*MMSparse: 2D partitioning of sparse matrix based on mathematical morphology*](https://doi.org/10.1016/j.future.2020.02.076), in Future Generation Computer Systems (**FGCS, SCI一区**), vol. 108, pp. 521-532, July 2020, doi: 10.1016/j.future.2020.02.076.
+## 课题组合照
 
-<!-- Patents
-====== -->
-
-For more information
-======
-More info about me can be found in [CV](https://double-flower.github.io/cv/).
+<figure class="star-figure">
+  <img src="../images/group-photo.jpg" alt="Star-Lab 课题组合照" class="img-fluid" />
+  <figcaption>Star-Lab 团队协作与研究交流</figcaption>
+</figure>
