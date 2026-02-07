@@ -1,13 +1,17 @@
 ---
+
 title: "成员介绍"
 permalink: /members/
 layout: single
 author_profile: false
-classes: wide members-page
+classes:
+  - wide
+  - members-page
 description: "Star-Lab 课题组成员"
+
 ---
 
-## 教师与博士后
+## 教师
 
 <div class="faculty-grid">
   <article class="faculty-card">
