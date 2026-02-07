@@ -905,3 +905,60 @@
   }
 }
 
+/* ===== Group photo carousel ===== */
+.sg-carousel {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto 12px;
+}
+
+.sg-viewport {
+  position: relative;
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+.sg-image {
+  display: none;
+  width: 100%;
+  height: min(68vw, 640px);
+  object-fit: cover;
+  object-position: center;
+}
+
+.sg-image.is-active {
+  display: block;
+}
+
+.sg-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  width: 54px;
+  height: 54px;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #334155;
+  font-size: 40px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.sg-prev { left: 14px; }
+.sg-next { right: 14px; }
+
+.sg-btn:hover {
+  background: #fff;
+  border-color: #94a3b8;
+}
+
+.sg-caption {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #374151;
+  margin-top: 8px;
+}
+
