@@ -534,3 +534,137 @@
     max-width: 260px;
   }
 }
+/* ===== Star-Lab News Modules ===== */
+.news-page .news-index-nav {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 0 0 18px 0;
+}
+
+.news-page .news-index-nav a {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  color: #1f4e79;
+  text-decoration: none;
+  background: #fff;
+}
+
+.news-page .news-index-nav a:hover {
+  background: #f3f4f6;
+}
+
+.news-page .news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 14px;
+  margin: 10px 0 20px;
+}
+
+.news-page .news-card {
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  padding: 12px 14px;
+  border-radius: 4px;
+}
+
+.news-page .news-card h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.news-page .news-card h3 a {
+  color: #111827;
+  text-decoration: none;
+}
+
+.news-page .news-card h3 a:hover {
+  color: #1f4e79;
+  text-decoration: underline;
+}
+
+.news-page .news-meta {
+  margin: 0 0 6px 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+@media (max-width: 900px) {
+  .news-page .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== Faculty aligned cards ===== */
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 420px));
+  gap: 24px;
+  align-items: start;
+  margin: 10px 0 20px;
+}
+
+.faculty-card {
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.faculty-photo-shell {
+  padding: 10px;
+  background: #efefef;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.faculty-photo {
+  width: 100%;
+  height: 460px;          /* 两位老师照片统一显示高度 */
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  background: #e5e7eb;
+}
+
+.faculty-name {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #4b5563;
+  line-height: 1.2;
+  padding: 10px 8px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f3f4f6;
+}
+
+.faculty-info {
+  padding: 14px 16px;
+  background: #fff;
+  color: #374151;
+  line-height: 1.75;
+}
+
+.faculty-info h4 {
+  margin: 0 0 8px 0;
+  font-size: 1.05rem;
+  color: #111827;
+}
+
+.faculty-info p {
+  margin: 8px 0;
+}
+
+.faculty-info a {
+  color: #1f4e79;
+  text-decoration: none;
+}
+
+.faculty-info a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .faculty-grid {
+    grid-template-columns: 1fr;
+  }
+}
