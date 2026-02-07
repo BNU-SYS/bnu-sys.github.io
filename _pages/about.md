@@ -52,21 +52,16 @@ description: "BNU-SYS，聚焦计算机体系结构、并行与高性能计算�
 <div class="sg-carousel" id="groupCarousel">
   <div class="sg-viewport">
     <img class="sg-image is-active"
-         src="{{ '/images/group/group-01.jpg' | relative_url }}"
-         alt="Star-Lab 合照 1：团队合影"
-         data-caption="Star-Lab 团队合影（2026年）">
+         src="{{ '/images/group/group-01.jpg' | relative_url }}">
 
     <img class="sg-image"
-         src="{{ '/images/group/group-02.jpg' | relative_url }}"
-         alt="Star-Lab 合照 2：学术交流">
+         src="{{ '/images/group/group-02.jpg' | relative_url }}">
 
     <img class="sg-image"
-         src="{{ '/images/group/group-03.jpg' | relative_url }}"
-         alt="Star-Lab 合照 3：团建活动">
+         src="{{ '/images/group/group-03.jpg' | relative_url }}">
 
     <img class="sg-image"
-         src="{{ '/images/group/group-04.jpg' | relative_url }}"
-         alt="Star-Lab 合照 4：团队活动">
+         src="{{ '/images/group/group-04.jpg' | relative_url }}">
   </div>
 
   <!-- 按钮一定要在 sg-carousel 内部 -->
