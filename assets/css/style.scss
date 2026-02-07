@@ -39,17 +39,20 @@ a:hover { text-decoration: underline; }
 
 .member-card {
   border: 1px solid #e5e7eb;
-  background: var(--star-white);
+  background: #fff;
   border-radius: 10px;
   padding: 16px;
+  min-height: 420px;
 }
 
 .member-card img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
+  width: 180px;          /* 统一宽度 */
+  height: 220px;         /* 统一高度 */
+  object-fit: cover;     /* 按盒子裁剪，避免变形 */
+  object-position: center top;  /* 人像更自然（优先保留上半部分） */
   border-radius: 8px;
-  margin-bottom: 12px;
+  display: block;
+  margin: 0 auto 12px auto;     /* 居中 */
 }
 
 .activity-list {
