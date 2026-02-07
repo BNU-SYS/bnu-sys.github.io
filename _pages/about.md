@@ -47,59 +47,63 @@ description: "BNU-SYS，聚焦计算机体系结构、并行与高性能计算�
 
 ---
 
-<div class="sg-carousel" id="group-slider">
-  <div class="sg-stage">
-    <button class="sg-nav sg-prev" type="button" aria-label="上一张">‹</button>
+## 课题组合照
 
+<div class="sg-carousel" id="groupCarousel">
+  <div class="sg-viewport">
     <img class="sg-image is-active"
          src="{{ '/images/group/group-01.jpg' | relative_url }}"
-         alt="Star-Lab 团队合影"
+         alt="Star-Lab 合照 1：团队合影"
          data-caption="Star-Lab 团队合影（2026年）">
 
     <img class="sg-image"
          src="{{ '/images/group/group-02.jpg' | relative_url }}"
-         alt="Star-Lab 学术交流"
-         data-caption="Star-Lab 学术交流（2026年）">
+         alt="Star-Lab 合照 2：学术交流">
 
     <img class="sg-image"
          src="{{ '/images/group/group-03.jpg' | relative_url }}"
-         alt="Star-Lab 团建活动"
-         data-caption="Star-Lab 团建活动（2026年）">
+         alt="Star-Lab 合照 3：团建活动">
 
-    <button class="sg-nav sg-next" type="button" aria-label="下一张">›</button>
+    <img class="sg-image"
+         src="{{ '/images/group/group-04.jpg' | relative_url }}"
+         alt="Star-Lab 合照 4：团队活动">
   </div>
 
-  <p class="sg-caption" id="group-slider-caption">Star-Lab 团队合影（2026年）</p>
+  <!-- 按钮一定要在 sg-carousel 内部 -->
+  <button class="sg-btn sg-prev" type="button" aria-label="上一张">‹</button>
+  <button class="sg-btn sg-next" type="button" aria-label="下一张">›</button>
 </div>
+
+<p class="sg-caption" id="groupCaption">Star-Lab 团队合影 </p>
 
 <script>
 (function () {
-  const root = document.getElementById('group-slider');
+  const root = document.getElementById('groupCarousel');
   if (!root) return;
 
   const images = Array.from(root.querySelectorAll('.sg-image'));
   const prevBtn = root.querySelector('.sg-prev');
   const nextBtn = root.querySelector('.sg-next');
-  const caption = document.getElementById('group-slider-caption');
-
+  const caption = document.getElementById('groupCaption');
   let idx = images.findIndex(img => img.classList.contains('is-active'));
   if (idx < 0) idx = 0;
 
-  function render(i) {
-    images.forEach((img, k) => img.classList.toggle('is-active', k === i));
-    caption.textContent = images[i].dataset.caption || images[i].alt || '';
+  function render() {
+    images.forEach((img, i) => img.classList.toggle('is-active', i === idx));
+    caption.textContent = images[idx].dataset.caption || images[idx].alt || '';
   }
 
   prevBtn.addEventListener('click', () => {
     idx = (idx - 1 + images.length) % images.length;
-    render(idx);
+    render();
   });
 
   nextBtn.addEventListener('click', () => {
     idx = (idx + 1) % images.length;
-    render(idx);
+    render();
   });
 
-  render(idx);
+  render();
 })();
 </script>
+
