@@ -10,7 +10,7 @@ classes:
 description: "Star-Lab 课题组成员"
 
 ---
-
+<div class="members-fw">
 ## 教师
 
 <div class="faculty-grid">
@@ -170,4 +170,5 @@ description: "Star-Lab 课题组成员"
     </div>
     <div class="member-name">欧学谦</div>
   </div>
+</div>
 </div>

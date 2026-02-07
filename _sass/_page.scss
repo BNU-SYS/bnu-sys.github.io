@@ -1244,8 +1244,67 @@ body.members-page #main {
   }
 }
 
-#main {
-  max-width: 3200px;  /* 原来通常是 x-large，太窄 */
+/* ===== FINAL OVERRIDE: members page ===== */
+
+/* 全站主内容更宽（你要全站生效就保留） */
+@media (min-width: 64em) {
+  #main {
+    max-width: 1700px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .layout--single .page {
+    float: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* 若出现空白侧栏占位，可强制隐藏 */
+  .layout--single .sidebar {
+    display: none !important;
+  }
 }
 
+/* members 页面：教师三人同排 */
+.members-fw .faculty-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 20px !important;
+  align-items: start;
+  margin: 12px 0 24px;
+}
 
+/* 学生四列 */
+.members-fw .member-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 20px !important;
+  margin: 12px 0 24px;
+}
+
+/* 教师/学生照片统一尺寸 */
+.members-fw .faculty-photo,
+.members-fw .member-photo {
+  width: 100% !important;
+  aspect-ratio: 3 / 4 !important;
+  height: auto !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  display: block;
+}
+
+/* 响应式 */
+@media (max-width: 1200px) {
+  .members-fw .faculty-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  .members-fw .member-grid  { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+}
+@media (max-width: 900px) {
+  .members-fw .faculty-grid { grid-template-columns: 1fr !important; }
+  .members-fw .member-grid  { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+@media (max-width: 560px) {
+  .members-fw .member-grid  { grid-template-columns: 1fr !important; }
+}
