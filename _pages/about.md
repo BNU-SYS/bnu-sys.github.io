@@ -55,24 +55,16 @@ description: "BNU-SYS，聚焦计算机体系结构、并行与高性能计算�
   <div class="sg-viewport">
     <img class="sg-image is-active"
          src="{{ '/images/group/group-01.jpg' | relative_url }}"
-         alt="Star-Lab 合照 1：团队合影"
-         <!-- data-caption="Star-Lab 团队合影（2026年）"> -->
+         alt="Star-Lab 合照 1：团队合影">
     <img class="sg-image"
          src="{{ '/images/group/group-02.jpg' | relative_url }}"
-         alt="Star-Lab 合照 2：学术交流"
-         <!-- data-caption="学术交流活动（2026年）"> -->
+         alt="Star-Lab 合照 2：学术交流">
     <img class="sg-image"
          src="{{ '/images/group/group-03.jpg' | relative_url }}"
-         alt="Star-Lab 合照 3：团建活动"
-         <!-- data-caption="团建活动（2026年）"> -->
+         alt="Star-Lab 合照 3：团建活动">
      <img class="sg-image is-active"
          src="{{ '/images/group/group-04.jpg' | relative_url }}"
-         alt="Star-Lab 合照 1：团队合影"
-         <!-- data-caption="Star-Lab 团队合影（2026年）"> -->
-    <img class="sg-image"
-         src="{{ '/images/group/group-05.jpg' | relative_url }}"
-         alt="Star-Lab 合照 2：学术交流"
-         <!-- data-caption="学术交流活动（2026年）"> -->
+         alt="Star-Lab 合照 1：团队合影">
   </div>
 
   <button class="sg-btn sg-next" type="button" aria-label="下一张">›</button>
