@@ -770,3 +770,61 @@ $site-max-width: 1180px;
   margin: 1rem 0 0.7rem;
   line-height: 1.3;
 }
+/* ===== FINAL LOCK: members 页面照片统一尺寸 ===== */
+.members-page .members-fw .faculty-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, 220px) !important; /* 教师3列 */
+  gap: 20px !important;
+  justify-content: start !important;
+}
+
+.members-page .members-fw .member-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 220px) !important; /* 学生4列 */
+  gap: 20px !important;
+  justify-content: start !important;
+}
+
+/* 教师卡和学生卡同宽 */
+.members-page .members-fw .faculty-card,
+.members-page .members-fw .member-card {
+  width: 220px !important;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+/* 关键：教师/学生照片完全同尺寸 */
+.members-page .members-fw .faculty-photo,
+.members-page .members-fw .member-photo {
+  width: 100% !important;
+  height: 300px !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  display: block !important;
+  background: #e5e7eb;
+}
+
+/* 响应式 */
+@media (max-width: 1200px) {
+  .members-page .members-fw .faculty-grid {
+    grid-template-columns: repeat(2, 220px) !important;
+  }
+  .members-page .members-fw .member-grid {
+    grid-template-columns: repeat(3, 220px) !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .members-page .members-fw .faculty-grid {
+    grid-template-columns: repeat(1, 220px) !important;
+  }
+  .members-page .members-fw .member-grid {
+    grid-template-columns: repeat(2, 220px) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .members-page .members-fw .member-grid {
+    grid-template-columns: repeat(1, 220px) !important;
+  }
+}
