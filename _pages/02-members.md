@@ -4,7 +4,7 @@ permalink: /members/
 layout: single
 author_profile: false
 classes: wide
-description: "Star-Lab 成员介绍：计卫星、高建花、石剑君、刘秉鑫。"
+description: "Star-Lab 成员介绍"
 ---
 
 <!-- # 课题组成员 -->

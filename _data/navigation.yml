@@ -10,3 +10,7 @@ main:
 
   - title: "团队新闻"
     url: /activities/
+    
+  - title: "团队招募"
+    url: /recruitment/
+

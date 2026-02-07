@@ -430,3 +430,23 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Recruitment page ===== */
+.recruit-hero {
+  border-left: 4px solid #1f4e79;
+  background: #f8fafc;
+  padding: 16px 18px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+
+.recruit-hero h1 {
+  margin: 0 0 8px 0;
+}
+
+.recruit-hero p {
+  margin: 0;
+  color: #374151;
+  line-height: 1.8;
+}
+
