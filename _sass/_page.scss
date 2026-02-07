@@ -1033,11 +1033,11 @@
 }
 
 /* ===== Members page final override ===== */
-body.members-page #main {
-  max-width: 1700px;   /* 放宽主容器 */
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
+// body.members-page #main {
+//   max-width: 1700px;   /* 放宽主容器 */
+//   padding-left: 1rem;
+//   padding-right: 1rem;
+// }
 
 @media (min-width: 64em) {
   body.members-page .page {
@@ -1143,13 +1143,13 @@ body.members-page #main {
 /* ===== Members page: force fix (final) ===== */
 
 /* 1) 强制把成员页内容拉宽，去掉左右大留白 */
-.members-fw {
-  box-sizing: border-box;
-  width: calc(100vw - 48px);
-  max-width: 1680px;
-  margin-left: calc(50% - 50vw + 24px);
-  margin-right: 0;
-}
+// .members-fw {
+//   box-sizing: border-box;
+//   width: calc(100vw - 48px);
+//   max-width: 1680px;
+//   margin-left: calc(50% - 50vw + 24px);
+//   margin-right: 0;
+// }
 
 /* 2) 教师/博士后三人同排 */
 .members-fw .faculty-grid {
@@ -1308,3 +1308,53 @@ body.members-page #main {
 @media (max-width: 560px) {
   .members-fw .member-grid  { grid-template-columns: 1fr !important; }
 }
+
+/* ===== Global width: 全站缩窄 ===== */
+$site-max-width: 1180px; // 可改成 1100 / 1200 / 1280
+
+#main {
+  max-width: $site-max-width !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+/* 页面主内容区域同宽 */
+@media (min-width: 64em) {
+  .page,
+  .archive {
+    width: 100% !important;
+    max-width: $site-max-width !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    padding: 0 !important;
+  }
+
+  .page__inner-wrap,
+  .page__content {
+    max-width: $site-max-width !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* 顶部导航同宽（可选但建议） */
+.masthead__inner-wrap,
+.greedy-nav {
+  max-width: $site-max-width !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* 取消 members 页“强制超宽” */
+body.members-page #main {
+  max-width: $site-max-width !important;
+}
+.members-fw {
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
