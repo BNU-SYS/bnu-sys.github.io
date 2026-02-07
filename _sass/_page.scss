@@ -1240,4 +1240,23 @@ body.members-page #main {
   }
 }
 
+/* 教师卡片：职称和个人主页居中 */
+.members-page .faculty-info {
+  text-align: center;
+}
+
+.members-page .faculty-info h4 {
+  text-align: center;
+  margin: 0 0 8px 0;
+}
+
+.members-page .faculty-info p {
+  text-align: center;
+  margin: 8px 0;
+}
+
+.members-page .faculty-info a {
+  display: inline-block;
+}
+
 
