@@ -8,7 +8,130 @@ classes:
 description: "Star-Lab 课题组成员"
 ---
 
-<div class="members-fw" markdown="1">
+<style>
+/* ===== Members page only: 强制统一 ===== */
+.members-page .members-fw{
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+/* 标题 */
+.members-page .members-title{
+  font-size: 2.0rem;
+  font-weight: 700;
+  margin: 1rem 0 0.8rem;
+  border-left: 4px solid #1f4e79;
+  padding-left: 10px;
+  line-height: 1.25;
+}
+.members-page .members-subtitle{
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin: 1rem 0 0.7rem;
+  line-height: 1.25;
+}
+.members-page .members-divider{
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+  margin: 22px 0;
+}
+
+/* 网格 */
+.members-page .faculty-grid{
+  display: grid !important;
+  grid-template-columns: repeat(3, 220px) !important;
+  gap: 20px !important;
+  justify-content: start !important;
+}
+.members-page .member-grid{
+  display: grid !important;
+  grid-template-columns: repeat(4, 220px) !important;
+  gap: 20px !important;
+  justify-content: start !important;
+}
+
+/* 卡片 */
+.members-page .faculty-card,
+.members-page .member-card{
+  width: 220px !important;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 关键：照片壳固定高度，图片绝对定位填满 */
+.members-page .faculty-photo-shell,
+.members-page .member-photo-shell{
+  position: relative !important;
+  width: 100% !important;
+  height: 300px !important;   /* 所有照片统一高度 */
+  padding: 0 !important;
+  overflow: hidden !important;
+  background: #efefef !important;
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+.members-page .faculty-photo,
+.members-page .member-photo{
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  display: block !important;
+  background: #e5e7eb;
+}
+
+/* 文字区 */
+.members-page .faculty-name,
+.members-page .member-name{
+  text-align: center;
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #374151;
+  line-height: 1.25;
+  padding: 10px 8px;
+  border-top: 1px solid #e5e7eb;
+  background: #f3f4f6;
+}
+.members-page .faculty-info,
+.members-page .member-meta{
+  text-align: center;
+  padding: 10px 12px 12px;
+  background: #fff;
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 0.94rem;
+}
+.members-page .faculty-info p,
+.members-page .member-meta p{
+  margin: 4px 0;
+}
+.members-page .faculty-info a{
+  color: #1f4e79;
+  text-decoration: none;
+}
+.members-page .faculty-info a:hover{
+  text-decoration: underline;
+}
+
+/* 响应式 */
+@media (max-width: 1200px){
+  .members-page .faculty-grid{ grid-template-columns: repeat(2, 220px) !important; }
+  .members-page .member-grid{ grid-template-columns: repeat(3, 220px) !important; }
+}
+@media (max-width: 900px){
+  .members-page .faculty-grid{ grid-template-columns: repeat(1, 220px) !important; }
+  .members-page .member-grid{ grid-template-columns: repeat(2, 220px) !important; }
+}
+@media (max-width: 560px){
+  .members-page .member-grid{ grid-template-columns: repeat(1, 220px) !important; }
+}
+</style>
+
+<div class="members-fw">
 
 <h2 class="members-title">教师</h2>
 
@@ -18,7 +141,7 @@ description: "Star-Lab 课题组成员"
       <img class="faculty-photo"
            src="{{ '/images/members/ji-weixing.png' | relative_url }}"
            alt="计卫星"
-           onerror="this.onerror=null;this.src='{{ '/images/members/default.png' | relative_url }}';">
+           onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
     <div class="faculty-name">计卫星（教授）</div>
     <div class="faculty-info">
@@ -47,11 +170,13 @@ description: "Star-Lab 课题组成员"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
     <div class="faculty-name">石剑君（博士后）</div>
-    <div class="faculty-info"></div>
+    <div class="faculty-info">
+      <p>&nbsp;</p>
+    </div>
   </article>
 </div>
 
----
+<hr class="members-divider"/>
 
 <h3 class="members-subtitle">博士生</h3>
 
@@ -105,7 +230,7 @@ description: "Star-Lab 课题组成员"
   </div>
 </div>
 
----
+<hr class="members-divider"/>
 
 <h3 class="members-subtitle">硕士生</h3>
 
