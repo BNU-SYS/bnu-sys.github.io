@@ -1,6 +1,6 @@
 ---
 title: "团队新闻"
-permalink: /news/
+permalink: /activities/
 layout: single
 author_profile: false
 classes: wide news-page
