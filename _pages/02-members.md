@@ -9,125 +9,128 @@ description: "Star-Lab 课题组成员"
 ---
 
 <style>
-/* ===== Members page only: 强制统一 ===== */
-.members-page .members-fw{
+/* ===== 强制重置：确保容器宽度固定 ===== */
+.members-page .members-fw {
   max-width: 1160px;
   margin: 0 auto;
 }
 
-/* 标题 */
-.members-page .members-title{
-  font-size: 2.0rem;
-  font-weight: 700;
-  margin: 1rem 0 0.8rem;
-  border-left: 4px solid #1f4e79;
-  padding-left: 10px;
-  line-height: 1.25;
-}
-.members-page .members-subtitle{
-  font-size: 1.55rem;
-  font-weight: 700;
-  margin: 1rem 0 0.7rem;
-  line-height: 1.25;
-}
-.members-page .members-divider{
-  border: 0;
-  border-top: 1px solid #e5e7eb;
-  margin: 22px 0;
-}
-
-/* 网格 */
-.members-page .faculty-grid{
+/* ===== 1. 网格布局锁定 ===== */
+/* 教师：3列，每列固定 220px */
+.members-page .faculty-grid {
   display: grid !important;
   grid-template-columns: repeat(3, 220px) !important;
   gap: 20px !important;
   justify-content: start !important;
 }
-.members-page .member-grid{
+/* 学生：4列，每列固定 220px */
+.members-page .member-grid {
   display: grid !important;
   grid-template-columns: repeat(4, 220px) !important;
   gap: 20px !important;
   justify-content: start !important;
 }
 
-/* 卡片 */
+/* ===== 2. 卡片外框 ===== */
 .members-page .faculty-card,
-.members-page .member-card{
-  width: 220px !important;
+.members-page .member-card {
+  width: 220px !important; /* 强制卡片宽度 */
   border: 1px solid #e5e7eb;
   background: #f9fafb;
   display: flex;
   flex-direction: column;
 }
 
-/* 关键：照片壳固定高度，图片绝对定位填满 */
+/* ===== 3. 关键：照片容器 (Shell) 锁定尺寸 ===== */
+/* 这里决定了照片显示的最终大小，比如 220x300 */
 .members-page .faculty-photo-shell,
-.members-page .member-photo-shell{
+.members-page .member-photo-shell {
   position: relative !important;
-  width: 100% !important;
-  height: 300px !important;   /* 所有照片统一高度 */
-  padding: 0 !important;
+  width: 218px !important;    /* 220px 减去左右边框各1px */
+  height: 300px !important;   /* 强制统一高度：所有人都一样高 */
+  padding: 0 !important;      /* 去除内边距干扰 */
   overflow: hidden !important;
-  background: #efefef !important;
-  border-bottom: 1px solid #e5e7eb !important;
+  background: #e5e7eb !important;
+  border-bottom: 1px solid #e5e7eb;
 }
 
+/* ===== 4. 关键：图片 (Img) 自动裁剪填满 ===== */
 .members-page .faculty-photo,
-.members-page .member-photo{
+.members-page .member-photo {
   position: absolute !important;
-  inset: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important;
-  object-position: center top !important;
-  display: block !important;
-  background: #e5e7eb;
+  
+  /* 核心代码：裁剪模式 */
+  object-fit: cover !important;     /* 保持比例填满，多余部分裁掉 */
+  object-position: top center !important; /* 优先显示头部 */
+  
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  aspect-ratio: unset !important;   /* 禁用 SCSS 中的比例干扰 */
 }
 
-/* 文字区 */
+/* ===== 文字样式保持不变 ===== */
+.members-page .members-title {
+  font-size: 2.0rem;
+  font-weight: 700;
+  margin: 1rem 0 0.8rem;
+  border-left: 4px solid #1f4e79;
+  padding-left: 10px;
+}
+.members-page .members-subtitle {
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin: 1rem 0 0.7rem;
+}
+.members-page .members-divider {
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+  margin: 22px 0;
+}
 .members-page .faculty-name,
-.members-page .member-name{
+.members-page .member-name {
   text-align: center;
   font-size: 1.08rem;
   font-weight: 700;
   color: #374151;
-  line-height: 1.25;
   padding: 10px 8px;
   border-top: 1px solid #e5e7eb;
   background: #f3f4f6;
 }
 .members-page .faculty-info,
-.members-page .member-meta{
+.members-page .member-meta {
   text-align: center;
-  padding: 10px 12px 12px;
+  padding: 10px 12px;
   background: #fff;
   color: #4b5563;
-  line-height: 1.6;
   font-size: 0.94rem;
+  flex-grow: 1;
 }
-.members-page .faculty-info p,
-.members-page .member-meta p{
-  margin: 4px 0;
-}
-.members-page .faculty-info a{
+.members-page .faculty-info a {
   color: #1f4e79;
   text-decoration: none;
 }
-.members-page .faculty-info a:hover{
-  text-decoration: underline;
-}
 
-/* 响应式 */
-@media (max-width: 1200px){
-  .members-page .faculty-grid{ grid-template-columns: repeat(2, 220px) !important; }
-  .members-page .member-grid{ grid-template-columns: repeat(3, 220px) !important; }
+/* ===== 响应式适配 ===== */
+@media (max-width: 1200px) {
+  .members-page .faculty-grid { grid-template-columns: repeat(2, 220px) !important; }
+  .members-page .member-grid { grid-template-columns: repeat(3, 220px) !important; }
 }
-@media (max-width: 900px){
-  .members-page .faculty-grid{ grid-template-columns: repeat(1, 220px) !important; }
-  .members-page .member-grid{ grid-template-columns: repeat(2, 220px) !important; }
+@media (max-width: 960px) {
+  .members-page .faculty-grid { grid-template-columns: repeat(2, 220px) !important; }
+  .members-page .member-grid { grid-template-columns: repeat(2, 220px) !important; }
 }
-@media (max-width: 560px){
-  .members-page .member-grid{ grid-template-columns: repeat(1, 220px) !important; }
+@media (max-width: 600px) {
+  /* 手机端居中单列 */
+  .members-page .faculty-grid,
+  .members-page .member-grid { 
+    grid-template-columns: repeat(1, 220px) !important; 
+    justify-content: center !important;
+  }
 }
 </style>
 
@@ -336,9 +339,9 @@ description: "Star-Lab 课题组成员"
       <img class="member-photo" src="{{ '/images/members/ou-xueqian.jpg' | relative_url }}" alt="欧学谦"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="member-name">欧学谦</div>
+    <div class="member-name">欧学谦（2025级）</div>
     <div class="member-meta">
-      <p>2025级</p>
+     
       <p>研究方向：代码分析</p>
     </div>
   </div>

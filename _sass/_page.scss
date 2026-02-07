@@ -465,15 +465,11 @@ $site-max-width: 1180px;
 }
 
 /* 教师/学生照片同尺寸 */
+/* 修改后的建议：删掉 aspect-ratio 和 height: auto */
 .members-page .faculty-photo,
 .members-page .member-photo {
-  width: 100% !important;
-  aspect-ratio: 3 / 4 !important;
-  height: auto !important;
-  object-fit: cover !important;
-  object-position: center top !important;
+  /* 这里的样式建议留空，或者只保留 object-fit */
   display: block;
-  background: #e5e7eb;
 }
 
 .members-page .faculty-name,
