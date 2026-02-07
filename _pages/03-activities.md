@@ -1,5 +1,5 @@
 ---
-title: "课题组团建活动"
+title: "团建活动"
 permalink: /activities/
 layout: single
 author_profile: false
@@ -7,7 +7,7 @@ classes: wide
 description: "Star-Lab 团建活动记录与照片。"
 ---
 
-# 课题组团建活动
+<!-- # 课题组团建活动 -->
 
 <div class="activity-list">
 

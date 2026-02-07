@@ -1,5 +1,5 @@
 ---
-title: "团队成果"
+title: "成果展示"
 permalink: /achievements/
 layout: single
 author_profile: false
@@ -8,7 +8,7 @@ description: "Star-Lab 团队成果：论文、专利与软件系统。"
 ---
 
 <section class="results-hero">
-  <h1>团队成果</h1>
+  <!-- <h1>团队成果</h1> -->
   <p>围绕计算机体系结构、并行与高性能计算、代码分析与优化、大模型推理优化等方向，持续产出高质量成果。</p>
 </section>
 
@@ -16,7 +16,7 @@ description: "Star-Lab 团队成果：论文、专利与软件系统。"
 {% assign patent_count = site.data.achievements.patents | size %}
 {% assign software_count = site.data.achievements.software | size %}
 
-<div class="results-metrics">
+<!-- <div class="results-metrics">
   <div class="metric-card">
     <div class="metric-value">{{ paper_count }}</div>
     <div class="metric-label">论文</div>
@@ -29,7 +29,7 @@ description: "Star-Lab 团队成果：论文、专利与软件系统。"
     <div class="metric-value">{{ software_count }}</div>
     <div class="metric-label">软件</div>
   </div>
-</div>
+</div> -->
 
 ---
 
