@@ -5,7 +5,6 @@ permalink: /members/
 layout: single
 author_profile: false
 classes:
-  - wide
   - members-page
 description: "Star-Lab 课题组成员"
 

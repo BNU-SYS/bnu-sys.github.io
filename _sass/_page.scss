@@ -2,6 +2,9 @@
    SINGLE PAGE/POST
    ========================================================================== */
 
+/* ===== 全站最大宽度（改这里即可） ===== */
+$site-max-width: 1180px;
+
 #main {
   @include container;
   @include clearfix;
@@ -11,11 +14,10 @@
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
-  @include breakpoint($x-large) {
-    max-width: 1600px;  // 可改 1500~1800
-  }
+  max-width: $site-max-width !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
-
 
 .page {
   @include breakpoint($large) {
@@ -23,19 +25,44 @@
     @include prefix(0 of 12);
     @include suffix(0 of 12);
     float: none;
+    width: 100% !important;
+    max-width: $site-max-width !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .page__inner-wrap {
     @include full();
+    max-width: $site-max-width;
+    margin-left: auto;
+    margin-right: auto;
 
     .page__content,
     .page__meta,
     .page__share {
       @include full();
+      max-width: $site-max-width;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }
 
+/* 顶部导航同宽 */
+.masthead__inner-wrap,
+.greedy-nav {
+  max-width: $site-max-width !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* 即使页面写了 classes: wide，也强制收窄 */
+.layout--single.wide .page,
+.layout--archive.wide .archive {
+  max-width: $site-max-width !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
 
 .page__title {
   margin-top: 0;
@@ -52,7 +79,6 @@
 }
 
 .page__content {
-
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
@@ -62,11 +88,9 @@
     font-size: 1em;
   }
 
-  /* paragraph indents */
   p {
     margin: 0 0 $indent-var;
 
-    /* sibling indentation*/
     @if $paragraph-indent == true {
       & + p {
         text-indent: $indent-var;
@@ -103,7 +127,6 @@
     font-size: $type-size-6;
   }
 
-  /* blockquote citations */
   blockquote + .small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
@@ -137,7 +160,7 @@
       padding-right: 1em;
 
       @include breakpoint($x-large) {
-        max-width: $x-large;
+        max-width: $site-max-width;
       }
     }
 
@@ -197,7 +220,6 @@
 /*
    Social sharing
    ========================================================================== */
-
 .page__share {
   margin-top: 2em;
   padding-top: 1em;
@@ -223,11 +245,9 @@
   text-transform: uppercase;
 }
 
-
 /*
    Page meta
    ========================================================================== */
-
 .page__meta {
   margin-top: 2em;
   color: mix(#fff, $gray, 25%);
@@ -249,11 +269,9 @@
   text-transform: uppercase;
 }
 
-
 /*
    Page taxonomy
    ========================================================================== */
-
 .page__taxonomy {
   .sep {
     display: none;
@@ -279,11 +297,9 @@
   }
 }
 
-
 /*
    Comments
    ========================================================================== */
-
 .page__comments {
   @include full();
 }
@@ -375,11 +391,9 @@
   }
 }
 
-
 /*
    Related
    ========================================================================== */
-
 .page__related {
   margin-top: 2em;
   padding-top: 1em;
@@ -403,32 +417,11 @@
   text-transform: uppercase;
 }
 
-/* ===== BNU-SYS members ===== */
-/* 教师信息块 */
-.m-meta {
-  padding: 0 12px 14px;
-  background: #f3f4f6;
-  color: #374151;
-  line-height: 1.65;
-  font-size: 0.95rem;
-}
-.m-role {
-  font-weight: 700;
-  color: #111827;
-  margin-bottom: 4px;
-}
-.m-research {
-  margin-bottom: 6px;
-}
-.m-homepage a {
-  color: #1f4e79;
-  text-decoration: none;
-}
-.m-homepage a:hover {
-  text-decoration: underline;
-}
+/* ==========================================================================
+   Star-Lab: Members page
+   ========================================================================== */
 
-/* ===== Star-Lab Members (same-size photo cards) ===== */
+/* 标题风格 */
 .members-page .page__content h2 {
   margin-top: 1.3rem;
   border-left: 4px solid #1f4e79;
@@ -440,104 +433,113 @@
   margin-bottom: 0.6rem;
 }
 
-.member-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 210px); /* 大屏固定4列，效果接近你图里布局 */
-  gap: 34px 38px;
-  justify-content: start;
-  margin: 10px 0 20px 0;
+/* 教师（含博士后）3列 */
+.members-page .faculty-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(220px, 1fr)) !important;
+  gap: 20px !important;
+  align-items: start;
+  margin: 12px 0 24px;
 }
 
-.member-card {
+/* 学生4列 */
+.members-page .member-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(180px, 1fr)) !important;
+  gap: 20px !important;
+  margin: 12px 0 24px;
+}
+
+/* 卡片统一 */
+.members-page .faculty-card,
+.members-page .member-card {
   border: 1px solid #e5e7eb;
-  background: #f5f5f5;
+  background: #f9fafb;
 }
 
-.member-photo-shell {
+.members-page .faculty-photo-shell,
+.members-page .member-photo-shell {
   padding: 8px;
   background: #efefef;
   border-bottom: 1px solid #e5e7eb;
 }
 
-/* 关键：统一照片显示大小 */
-.member-photo {
+/* 教师/学生照片同尺寸 */
+.members-page .faculty-photo,
+.members-page .member-photo {
   width: 100% !important;
-  height: 300px !important;      /* 所有照片统一高度 */
-  object-fit: cover !important;  /* 自动裁切，保证同尺寸 */
+  aspect-ratio: 3 / 4 !important;
+  height: auto !important;
+  object-fit: cover !important;
   object-position: center top !important;
   display: block;
   background: #e5e7eb;
 }
 
-.member-name {
+.members-page .faculty-name,
+.members-page .member-name {
   text-align: center;
-  font-size: 17px;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #4b5563;
   line-height: 1.2;
   padding: 10px 6px 12px;
+  border-top: 1px solid #e5e7eb;
+  background: #f3f4f6;
 }
 
-/* 教师附加信息块 */
-.faculty-info-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 420px));
-  gap: 16px;
-  margin: 6px 0 12px 0;
-}
-
-.faculty-info-card {
-  border: 1px solid #e5e7eb;
-  background: #ffffff;
+.members-page .faculty-info {
+  text-align: center;
   padding: 12px 14px;
-  border-radius: 4px;
-}
-
-.faculty-info-card h4 {
-  margin: 0 0 6px 0;
-  font-size: 1rem;
-}
-
-.faculty-info-card p {
-  margin: 6px 0;
+  background: #fff;
   color: #374151;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
-.faculty-info-card a {
+.members-page .faculty-info h4 {
+  margin: 0 0 6px 0;
+  font-size: 1.02rem;
+  color: #111827;
+}
+
+.members-page .faculty-info p {
+  margin: 6px 0;
+}
+
+.members-page .faculty-info a {
   color: #1f4e79;
   text-decoration: none;
 }
-
-.faculty-info-card a:hover {
+.members-page .faculty-info a:hover {
   text-decoration: underline;
 }
 
 /* 响应式 */
 @media (max-width: 1200px) {
-  .member-grid {
-    grid-template-columns: repeat(3, 210px);
+  .members-page .faculty-grid {
+    grid-template-columns: repeat(2, minmax(220px, 1fr)) !important;
+  }
+  .members-page .member-grid {
+    grid-template-columns: repeat(3, minmax(170px, 1fr)) !important;
   }
 }
-
 @media (max-width: 900px) {
-  .member-grid {
-    grid-template-columns: repeat(2, 210px);
+  .members-page .faculty-grid {
+    grid-template-columns: 1fr !important;
   }
-  .faculty-info-grid {
-    grid-template-columns: 1fr;
+  .members-page .member-grid {
+    grid-template-columns: repeat(2, minmax(160px, 1fr)) !important;
+  }
+}
+@media (max-width: 560px) {
+  .members-page .member-grid {
+    grid-template-columns: 1fr !important;
   }
 }
 
-@media (max-width: 560px) {
-  .member-grid {
-    grid-template-columns: 1fr;
-  }
-  .member-card {
-    max-width: 260px;
-  }
-}
-/* ===== Star-Lab News Modules ===== */
+/* ==========================================================================
+   Star-Lab: News modules
+   ========================================================================== */
 .news-page .news-index-nav {
   display: flex;
   gap: 12px;
@@ -600,140 +602,10 @@
     grid-template-columns: 1fr;
   }
 }
-/* ===== Faculty cards: same photo size as member cards ===== */
-.faculty-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(180px, 210px)); /* 和成员卡同量级宽度 */
-  gap: 20px;
-  margin: 12px 0 24px;
-  justify-content: start;
-}
 
-.faculty-card {
-  border: 1px solid #e5e7eb;
-  background: #f9fafb;
-}
-
-.faculty-photo-shell {
-  padding: 8px;
-  background: #efefef;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.faculty-photo {
-  width: 100%;
-  aspect-ratio: 3 / 4;     /* 与成员照片一致 */
-  height: auto !important; /* 覆盖之前的 460px */
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  background: #e5e7eb;
-}
-
-.faculty-name {
-  text-align: center;
-  font-size: 1.4rem;       /* 与成员名字风格接近 */
-  font-weight: 800;
-  color: #4b5563;
-  line-height: 1.2;
-  padding: 10px 6px 12px;
-  border-bottom: 1px solid #e5e7eb;
-  background: #f3f4f6;
-}
-
-.faculty-info {
-  text-align: center;
-  padding: 14px 16px;
-  background: #fff;
-  color: #374151;
-  line-height: 1.75;
-}
-
-.faculty-info h4 {
-  margin: 0 0 8px 0;
-  font-size: 1.05rem;
-  color: #111827;
-}
-
-.faculty-info p { margin: 8px 0; }
-
-.faculty-info a {
-  color: #1f4e79;
-  text-decoration: none;
-}
-
-.faculty-info a:hover { text-decoration: underline; }
-
-@media (max-width: 900px) {
-  .faculty-grid {
-    grid-template-columns: repeat(2, minmax(160px, 210px));
-  }
-}
-
-@media (max-width: 560px) {
-  .faculty-grid {
-    grid-template-columns: 1fr;
-    max-width: 260px;
-  }
-}
-
-// /* 统一成员网格（教师/博士后/博士/硕士都用这一套） */
-// .member-grid {
-//   display: grid;
-//   grid-template-columns: repeat(4, minmax(180px, 1fr));
-//   gap: 20px;
-//   margin: 12px 0 24px;
-// }
-
-// .member-card {
-//   border: 1px solid #e5e7eb;
-//   background: #f9fafb;
-// }
-
-// .member-photo-wrap {
-//   padding: 8px;
-//   background: #efefef;
-//   border-bottom: 1px solid #e5e7eb;
-// }
-
-// .member-photo {
-//   width: 100%;
-//   aspect-ratio: 3 / 4;   /* 关键：统一比例 */
-//   height: auto;
-//   object-fit: cover;
-//   object-position: center top;
-//   display: block;
-//   background: #e5e7eb;
-// }
-
-// .member-name {
-//   text-align: center;
-//   font-size: 1.8rem;
-//   font-weight: 800;
-//   color: #4b5563;
-//   padding: 10px 6px 12px;
-// }
-
-// .member-info-box {
-//   border: 1px solid #e5e7eb;
-//   background: #fff;
-//   padding: 14px 16px;
-//   border-radius: 6px;
-//   margin-top: 8px;
-// }
-
-// /* 响应式 */
-// @media (max-width: 1200px) {
-//   .member-grid { grid-template-columns: repeat(3, minmax(180px, 1fr)); }
-// }
-// @media (max-width: 900px) {
-//   .member-grid { grid-template-columns: repeat(2, minmax(160px, 1fr)); }
-// }
-// @media (max-width: 560px) {
-//   .member-grid { grid-template-columns: 1fr; }
-// }
-
-/* ===== 团队成果（论文卡片） ===== */
+/* ==========================================================================
+   Star-Lab: Achievements cards
+   ========================================================================== */
 .ach-year {
   margin-top: 1.8rem;
   margin-bottom: 0.8rem;
@@ -813,159 +685,9 @@
   }
 }
 
-/* ===== Star-Lab 首页图片轮播 ===== */
-.star-gallery {
-  display: grid;
-  grid-template-columns: 44px 1fr 44px;
-  align-items: center;
-  gap: 12px;
-  margin: 8px 0 10px 0;
-}
-
-.sg-viewport {
-  position: relative;
-  width: 100%;
-  background: #f3f4f6;
-  border: 1px solid #e5e7eb;
-  overflow: hidden;
-}
-
-/* 固定展示比例，保证视觉整齐 */
-.sg-viewport::before {
-  content: "";
-  display: block;
-  padding-top: 56.25%; /* 16:9 */
-}
-
-.sg-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  opacity: 0;
-  transition: opacity .25s ease;
-  background: #e5e7eb;
-}
-
-.sg-image.is-active {
-  opacity: 1;
-}
-
-.sg-btn {
-  width: 44px;
-  height: 44px;
-  border: 1px solid #d1d5db;
-  border-radius: 999px;
-  background: #fff;
-  color: #374151;
-  font-size: 28px;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.sg-btn:hover {
-  background: #f3f4f6;
-}
-
-.sg-caption {
-  text-align: center;
-  color: #4b5563;
-  font-size: 0.95rem;
-  margin-bottom: 8px;
-}
-
-.sg-dots {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 18px;
-}
-
-.sg-dot {
-  width: 8px;
-  height: 8px;
-  border: 0;
-  border-radius: 999px;
-  background: #cbd5e1;
-  cursor: pointer;
-  padding: 0;
-}
-
-.sg-dot.is-active {
-  background: #1f4e79;
-}
-
-@media (max-width: 640px) {
-  .star-gallery {
-    grid-template-columns: 36px 1fr 36px;
-    gap: 8px;
-  }
-  .sg-btn {
-    width: 36px;
-    height: 36px;
-    font-size: 22px;
-  }
-}
-
-/* ===== Group photo carousel ===== */
-.sg-carousel {
-  position: relative;
-  max-width: 1180px;
-  margin: 0 auto 12px;
-}
-
-.sg-viewport {
-  position: relative;
-  border: 1px solid #e5e7eb;
-  background: #f8fafc;
-  overflow: hidden;
-}
-
-.sg-image {
-  display: none;
-  width: 100%;
-  height: min(68vw, 640px);
-  object-fit: cover;
-  object-position: center;
-}
-
-.sg-image.is-active {
-  display: block;
-}
-
-.sg-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 3;
-  width: 54px;
-  height: 54px;
-  border: 1px solid #cbd5e1;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.92);
-  color: #334155;
-  font-size: 40px;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.sg-prev { left: 14px; }
-.sg-next { right: 14px; }
-
-.sg-btn:hover {
-  background: #fff;
-  border-color: #94a3b8;
-}
-
-.sg-caption {
-  text-align: center;
-  font-size: 1.05rem;
-  color: #374151;
-  margin-top: 8px;
-}
-/* ===== Star-Lab Group Carousel ===== */
+/* ==========================================================================
+   Star-Lab: Group photo carousel
+   ========================================================================== */
 .sg-carousel {
   position: relative;
   max-width: 1200px;
@@ -984,13 +706,14 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  object-position: center;
 }
 
 .sg-image.is-active {
   display: block;
 }
 
-/* 关键：按钮固定在图片左右中线位置 */
+/* 按钮固定在图片左右中线 */
 .sg-carousel > .sg-btn {
   position: absolute !important;
   top: 50% !important;
@@ -1030,330 +753,4 @@
   }
   .sg-carousel > .sg-prev { left: 8px !important; }
   .sg-carousel > .sg-next { right: 8px !important; }
-}
-
-/* ===== Members page final override ===== */
-// body.members-page #main {
-//   max-width: 1700px;   /* 放宽主容器 */
-//   padding-left: 1rem;
-//   padding-right: 1rem;
-// }
-
-@media (min-width: 64em) {
-  body.members-page .page {
-    float: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  body.members-page .page__inner-wrap,
-  body.members-page .page__content {
-    width: 100% !important;
-    max-width: none !important;
-  }
-}
-
-/* 教师/博士后：同一排 3 列 */
-.members-page .faculty-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(220px, 1fr));
-  gap: 20px;
-  align-items: start;
-  margin: 12px 0 24px;
-}
-
-/* 学生：4列，自适应降列 */
-.members-page .member-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(180px, 1fr));
-  gap: 20px;
-  margin: 12px 0 24px;
-}
-
-/* 统一卡片 */
-.members-page .faculty-card,
-.members-page .member-card {
-  border: 1px solid #e5e7eb;
-  background: #f9fafb;
-}
-
-.members-page .faculty-photo-shell,
-.members-page .member-photo-shell {
-  padding: 8px;
-  background: #efefef;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-/* 统一照片尺寸（教师/学生一致） */
-.members-page .faculty-photo,
-.members-page .member-photo {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  height: auto;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  background: #e5e7eb;
-}
-
-.members-page .faculty-name,
-.members-page .member-name {
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: #4b5563;
-  line-height: 1.2;
-  padding: 10px 6px 12px;
-  border-top: 1px solid #e5e7eb;
-  background: #f3f4f6;
-}
-
-.members-page .faculty-info {
-  padding: 12px 14px;
-  background: #fff;
-}
-.members-page .faculty-info h4 {
-  margin: 0 0 6px 0;
-  font-size: 1.05rem;
-}
-.members-page .faculty-info p {
-  margin: 6px 0;
-}
-.members-page .faculty-info a {
-  color: #1f4e79;
-  text-decoration: none;
-}
-.members-page .faculty-info a:hover {
-  text-decoration: underline;
-}
-
-/* 响应式 */
-@media (max-width: 1200px) {
-  .members-page .faculty-grid { grid-template-columns: repeat(2, minmax(220px, 1fr)); }
-  .members-page .member-grid  { grid-template-columns: repeat(3, minmax(170px, 1fr)); }
-}
-@media (max-width: 900px) {
-  .members-page .faculty-grid { grid-template-columns: 1fr; }
-  .members-page .member-grid  { grid-template-columns: repeat(2, minmax(160px, 1fr)); }
-}
-@media (max-width: 560px) {
-  .members-page .member-grid { grid-template-columns: 1fr; }
-}
-
-/* ===== Members page: force fix (final) ===== */
-
-/* 1) 强制把成员页内容拉宽，去掉左右大留白 */
-// .members-fw {
-//   box-sizing: border-box;
-//   width: calc(100vw - 48px);
-//   max-width: 1680px;
-//   margin-left: calc(50% - 50vw + 24px);
-//   margin-right: 0;
-// }
-
-/* 2) 教师/博士后三人同排 */
-.members-fw .faculty-grid {
-  display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  gap: 20px !important;
-  align-items: start;
-  margin: 12px 0 24px;
-}
-
-/* 3) 学生四列 */
-.members-fw .member-grid {
-  display: grid !important;
-  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-  gap: 20px !important;
-  margin: 12px 0 24px;
-}
-
-/* 4) 统一卡片和照片尺寸 */
-.members-fw .faculty-card,
-.members-fw .member-card {
-  border: 1px solid #e5e7eb;
-  background: #f9fafb;
-}
-
-.members-fw .faculty-photo-shell,
-.members-fw .member-photo-shell {
-  padding: 8px;
-  background: #efefef;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.members-fw .faculty-photo,
-.members-fw .member-photo {
-  width: 100% !important;
-  aspect-ratio: 3 / 4 !important;
-  height: auto !important;
-  object-fit: cover !important;
-  object-position: center top !important;
-  display: block;
-  background: #e5e7eb;
-}
-
-.members-fw .faculty-name,
-.members-fw .member-name {
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: #4b5563;
-  line-height: 1.2;
-  padding: 10px 6px 12px;
-  background: #f3f4f6;
-  border-top: 1px solid #e5e7eb;
-}
-
-.members-fw .faculty-info {
-  padding: 12px 14px;
-  background: #fff;
-}
-.members-fw .faculty-info h4 {
-  margin: 0 0 6px 0;
-  font-size: 1.05rem;
-}
-.members-fw .faculty-info p {
-  margin: 6px 0;
-}
-
-/* 响应式 */
-@media (max-width: 1200px) {
-  .members-fw .faculty-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  }
-  .members-fw .member-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  }
-}
-@media (max-width: 900px) {
-  .members-fw .faculty-grid {
-    grid-template-columns: 1fr !important;
-  }
-  .members-fw .member-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  }
-}
-@media (max-width: 560px) {
-  .members-fw {
-    width: calc(100vw - 24px);
-    margin-left: calc(50% - 50vw + 12px);
-  }
-  .members-fw .member-grid {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-/* ===== FINAL OVERRIDE: members page ===== */
-
-/* 全站主内容更宽（你要全站生效就保留） */
-@media (min-width: 64em) {
-  #main {
-    max-width: 1700px !important;
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-  }
-
-  .layout--single .page {
-    float: none !important;
-    width: 100% !important;
-    max-width: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  /* 若出现空白侧栏占位，可强制隐藏 */
-  .layout--single .sidebar {
-    display: none !important;
-  }
-}
-
-/* members 页面：教师三人同排 */
-.members-fw .faculty-grid {
-  display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  gap: 20px !important;
-  align-items: start;
-  margin: 12px 0 24px;
-}
-
-/* 学生四列 */
-.members-fw .member-grid {
-  display: grid !important;
-  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-  gap: 20px !important;
-  margin: 12px 0 24px;
-}
-
-/* 教师/学生照片统一尺寸 */
-.members-fw .faculty-photo,
-.members-fw .member-photo {
-  width: 100% !important;
-  aspect-ratio: 3 / 4 !important;
-  height: auto !important;
-  object-fit: cover !important;
-  object-position: center top !important;
-  display: block;
-}
-
-/* 响应式 */
-@media (max-width: 1200px) {
-  .members-fw .faculty-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
-  .members-fw .member-grid  { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
-}
-@media (max-width: 900px) {
-  .members-fw .faculty-grid { grid-template-columns: 1fr !important; }
-  .members-fw .member-grid  { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
-}
-@media (max-width: 560px) {
-  .members-fw .member-grid  { grid-template-columns: 1fr !important; }
-}
-
-/* ===== Global width: 全站缩窄 ===== */
-$site-max-width: 1180px; // 可改成 1100 / 1200 / 1280
-
-#main {
-  max-width: $site-max-width !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  padding-left: 1rem !important;
-  padding-right: 1rem !important;
-}
-
-/* 页面主内容区域同宽 */
-@media (min-width: 64em) {
-  .page,
-  .archive {
-    width: 100% !important;
-    max-width: $site-max-width !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    float: none !important;
-    padding: 0 !important;
-  }
-
-  .page__inner-wrap,
-  .page__content {
-    max-width: $site-max-width !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-
-/* 顶部导航同宽（可选但建议） */
-.masthead__inner-wrap,
-.greedy-nav {
-  max-width: $site-max-width !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-/* 取消 members 页“强制超宽” */
-body.members-page #main {
-  max-width: $site-max-width !important;
-}
-.members-fw {
-  width: auto !important;
-  max-width: none !important;
-  margin: 0 !important;
 }
