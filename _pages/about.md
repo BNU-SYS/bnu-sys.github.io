@@ -49,7 +49,94 @@ description: "BNU-SYS，聚焦计算机体系结构、并行与高性能计算�
 
 ## 课题组合照
 
-<figure class="star-figure">
-  <img src="../images/group-photo.jpg" alt="BNU-SYS 课题组合照" class="img-fluid" />
-  <figcaption>BNU-SYS 团队协作与研究交流</figcaption>
-</figure>
+<div class="star-gallery" id="starGallery">
+  <button class="sg-btn sg-prev" type="button" aria-label="上一张">‹</button>
+
+  <div class="sg-viewport">
+    <img class="sg-image is-active"
+         src="{{ '/images/group/group-01.jpg' | relative_url }}"
+         alt="Star-Lab 合照 1：团队合影"
+         <!-- data-caption="Star-Lab 团队合影（2026年）"> -->
+    <img class="sg-image"
+         src="{{ '/images/group/group-02.jpg' | relative_url }}"
+         alt="Star-Lab 合照 2：学术交流"
+         <!-- data-caption="学术交流活动（2026年）"> -->
+    <img class="sg-image"
+         src="{{ '/images/group/group-03.jpg' | relative_url }}"
+         alt="Star-Lab 合照 3：团建活动"
+         <!-- data-caption="团建活动（2026年）"> -->
+     <img class="sg-image is-active"
+         src="{{ '/images/group/group-04.jpg' | relative_url }}"
+         alt="Star-Lab 合照 1：团队合影"
+         <!-- data-caption="Star-Lab 团队合影（2026年）"> -->
+    <img class="sg-image"
+         src="{{ '/images/group/group-05.jpg' | relative_url }}"
+         alt="Star-Lab 合照 2：学术交流"
+         <!-- data-caption="学术交流活动（2026年）"> -->
+  </div>
+
+  <button class="sg-btn sg-next" type="button" aria-label="下一张">›</button>
+</div>
+
+<div class="sg-caption" id="sgCaption">Star-Lab 团队合影（2026年）</div>
+
+<div class="sg-dots" id="sgDots" aria-label="图片索引"></div>
+
+<script>
+(function () {
+  var gallery = document.getElementById('starGallery');
+  if (!gallery) return;
+
+  var imgs = Array.prototype.slice.call(gallery.querySelectorAll('.sg-image'));
+  var prev = gallery.querySelector('.sg-prev');
+  var next = gallery.querySelector('.sg-next');
+  var caption = document.getElementById('sgCaption');
+  var dotsWrap = document.getElementById('sgDots');
+  var idx = 0;
+
+  function renderDots() {
+    dotsWrap.innerHTML = '';
+    imgs.forEach(function (_, i) {
+      var b = document.createElement('button');
+      b.className = 'sg-dot' + (i === idx ? ' is-active' : '');
+      b.type = 'button';
+      b.setAttribute('aria-label', '第' + (i + 1) + '张');
+      b.addEventListener('click', function () {
+        idx = i;
+        render();
+      });
+      dotsWrap.appendChild(b);
+    });
+  }
+
+  function render() {
+    imgs.forEach(function (im, i) {
+      im.classList.toggle('is-active', i === idx);
+    });
+    var cap = imgs[idx].getAttribute('data-caption') || '';
+    caption.textContent = cap;
+    renderDots();
+  }
+
+  function showNext() {
+    idx = (idx + 1) % imgs.length;
+    render();
+  }
+
+  function showPrev() {
+    idx = (idx - 1 + imgs.length) % imgs.length;
+    render();
+  }
+
+  next.addEventListener('click', showNext);
+  prev.addEventListener('click', showPrev);
+
+  // 键盘支持
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') showNext();
+    if (e.key === 'ArrowLeft') showPrev();
+  });
+
+  render();
+})();
+</script>

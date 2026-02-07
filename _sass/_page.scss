@@ -808,3 +808,100 @@
     height: 180px;
   }
 }
+
+/* ===== Star-Lab 首页图片轮播 ===== */
+.star-gallery {
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0 10px 0;
+}
+
+.sg-viewport {
+  position: relative;
+  width: 100%;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+/* 固定展示比例，保证视觉整齐 */
+.sg-viewport::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; /* 16:9 */
+}
+
+.sg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity .25s ease;
+  background: #e5e7eb;
+}
+
+.sg-image.is-active {
+  opacity: 1;
+}
+
+.sg-btn {
+  width: 44px;
+  height: 44px;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  background: #fff;
+  color: #374151;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.sg-btn:hover {
+  background: #f3f4f6;
+}
+
+.sg-caption {
+  text-align: center;
+  color: #4b5563;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.sg-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.sg-dot {
+  width: 8px;
+  height: 8px;
+  border: 0;
+  border-radius: 999px;
+  background: #cbd5e1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.sg-dot.is-active {
+  background: #1f4e79;
+}
+
+@media (max-width: 640px) {
+  .star-gallery {
+    grid-template-columns: 36px 1fr 36px;
+    gap: 8px;
+  }
+  .sg-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+  }
+}
+
