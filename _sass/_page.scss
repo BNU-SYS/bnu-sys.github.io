@@ -961,4 +961,70 @@
   color: #374151;
   margin-top: 8px;
 }
+/* ===== Star-Lab Group Carousel ===== */
+.sg-carousel {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sg-viewport {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+}
+
+.sg-image {
+  display: none;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.sg-image.is-active {
+  display: block;
+}
+
+/* 关键：按钮固定在图片左右中线位置 */
+.sg-carousel > .sg-btn {
+  position: absolute !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 20;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  border: 1px solid #cbd5e1;
+  background: rgba(255, 255, 255, 0.9);
+  color: #334155;
+  font-size: 42px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.sg-carousel > .sg-btn:hover {
+  background: #ffffff;
+}
+
+.sg-carousel > .sg-prev { left: 14px !important; }
+.sg-carousel > .sg-next { right: 14px !important; }
+
+.sg-caption {
+  margin-top: 12px;
+  text-align: center;
+  color: #374151;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .sg-carousel > .sg-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 32px;
+  }
+  .sg-carousel > .sg-prev { left: 8px !important; }
+  .sg-carousel > .sg-next { right: 8px !important; }
+}
 
