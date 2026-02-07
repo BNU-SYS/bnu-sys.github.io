@@ -13,7 +13,7 @@ description: "Star-Lab 课题组成员"
   <article class="faculty-card">
     <div class="faculty-photo-shell">
       <img class="faculty-photo"
-           src="{{ '/images/members/ji-weixing.jpg' | relative_url }}"
+           src="{{ '/images/members/ji-weixing.png' | relative_url }}"
            alt="计卫星"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.png' | relative_url }}';">
     </div>
@@ -37,21 +37,22 @@ description: "Star-Lab 课题组成员"
       <p><a href="https://ai.bnu.edu.cn/xygk/szdw/zj/8730b86554214b389bbedf5a5d137092.htm" target="_blank" rel="noopener">个人主页</a></p>
     </div>
   </article>
-</div>
 
-  <article class="faculty-card">
+   <article class="faculty-card">
     <div class="faculty-photo-shell">
       <img class="faculty-photo"
-           src="{{ '/images/members/gao-jianhua.jpg' | relative_url }}"
-           alt="高建花"
+           src="{{ '/images/members/shi-jianjun.jpg' | relative_url }}"
+           alt="石剑君"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="faculty-name">石剑君</div>
+    <div class="faculty-name">高建花</div>
     <div class="faculty-info">
       <h4>石剑君（博士后）</h4>
     </div>
   </article>
 </div>
+
+
 
 ---
 
