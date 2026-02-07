@@ -9,71 +9,83 @@ description: "Star-Lab 课题组成员"
 ---
 
 <style>
-/* ===== 强制重置：确保容器宽度固定 ===== */
-.members-page .members-fw {
+/* ==========================================================================
+   强制覆盖样式 (Force Override)
+   使用 html body 前缀是为了确立最高优先级，战胜 _page.scss
+   ========================================================================== */
+
+/* 1. 强制重置容器宽度 */
+html body .members-page .members-fw {
   max-width: 1160px;
   margin: 0 auto;
 }
 
-/* ===== 1. 网格布局锁定 ===== */
-/* 教师：3列，每列固定 220px */
-.members-page .faculty-grid {
+/* 2. 强制锁定网格列宽 */
+html body .members-page .faculty-grid {
   display: grid !important;
-  grid-template-columns: repeat(3, 220px) !important;
-  gap: 20px !important;
-  justify-content: start !important;
-}
-/* 学生：4列，每列固定 220px */
-.members-page .member-grid {
-  display: grid !important;
-  grid-template-columns: repeat(4, 220px) !important;
+  grid-template-columns: repeat(3, 220px) !important; /* 教师3列，每列220px */
   gap: 20px !important;
   justify-content: start !important;
 }
 
-/* ===== 2. 卡片外框 ===== */
-.members-page .faculty-card,
-.members-page .member-card {
-  width: 220px !important; /* 强制卡片宽度 */
+html body .members-page .member-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 220px) !important; /* 学生4列，每列220px */
+  gap: 20px !important;
+  justify-content: start !important;
+}
+
+/* 3. 强制卡片宽度 */
+html body .members-page .faculty-card,
+html body .members-page .member-card {
+  width: 220px !important;
   border: 1px solid #e5e7eb;
   background: #f9fafb;
   display: flex;
   flex-direction: column;
 }
 
-/* ===== 3. 关键：照片容器 (Shell) 锁定尺寸 ===== */
-/* 这里决定了照片显示的最终大小，比如 220x300 */
-.members-page .faculty-photo-shell,
-.members-page .member-photo-shell {
+/* 
+   4. 核心修复：照片外壳 (Shell) 
+   这里强制高度为 300px
+*/
+html body .members-page .faculty-photo-shell,
+html body .members-page .member-photo-shell {
   position: relative !important;
-  width: 218px !important;    /* 220px 减去左右边框各1px */
-  height: 300px !important;   /* 强制统一高度：所有人都一样高 */
-  padding: 0 !important;      /* 去除内边距干扰 */
-  overflow: hidden !important;
+  width: 100% !important;
+  height: 300px !important;     /* <--- 强制高度，改这里调整长宽比 */
+  padding: 0 !important;
+  overflow: hidden !important;  /* 超出部分切掉 */
   background: #e5e7eb !important;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb !important;
+  aspect-ratio: auto !important; /* 杀死 SCSS 中的 aspect-ratio */
 }
 
-/* ===== 4. 关键：图片 (Img) 自动裁剪填满 ===== */
-.members-page .faculty-photo,
-.members-page .member-photo {
+/* 
+   5. 核心修复：照片本体 (Img) 
+   强制填满外壳，且杀死 aspect-ratio 和 height: auto
+*/
+html body .members-page .faculty-photo,
+html body .members-page .member-photo {
   position: absolute !important;
   top: 0 !important;
   left: 0 !important;
   width: 100% !important;
-  height: 100% !important;
+  height: 100% !important;        /* 强制拉伸到 300px 高 */
   
-  /* 核心代码：裁剪模式 */
-  object-fit: cover !important;     /* 保持比例填满，多余部分裁掉 */
+  object-fit: cover !important;   /* 关键：保持比例填满，不拉伸变形 */
   object-position: top center !important; /* 优先显示头部 */
   
+  max-width: none !important;
+  max-height: none !important;
+  min-height: 100% !important;
+  aspect-ratio: auto !important;  /* 再次确保杀死 SCSS 中的比例限制 */
   margin: 0 !important;
   padding: 0 !important;
   border: none !important;
-  aspect-ratio: unset !important;   /* 禁用 SCSS 中的比例干扰 */
 }
 
-/* ===== 文字样式保持不变 ===== */
+/* ===== 以下是普通文字样式，无需最高权重 ===== */
 .members-page .members-title {
   font-size: 2.0rem;
   font-weight: 700;
@@ -100,6 +112,7 @@ description: "Star-Lab 课题组成员"
   padding: 10px 8px;
   border-top: 1px solid #e5e7eb;
   background: #f3f4f6;
+  line-height: 1.3;
 }
 .members-page .faculty-info,
 .members-page .member-meta {
@@ -108,7 +121,7 @@ description: "Star-Lab 课题组成员"
   background: #fff;
   color: #4b5563;
   font-size: 0.94rem;
-  flex-grow: 1;
+  flex-grow: 1; /* 确保卡片底部对齐 */
 }
 .members-page .faculty-info a {
   color: #1f4e79;
@@ -117,20 +130,18 @@ description: "Star-Lab 课题组成员"
 
 /* ===== 响应式适配 ===== */
 @media (max-width: 1200px) {
-  .members-page .faculty-grid { grid-template-columns: repeat(2, 220px) !important; }
-  .members-page .member-grid { grid-template-columns: repeat(3, 220px) !important; }
+  html body .members-page .faculty-grid { grid-template-columns: repeat(2, 220px) !important; }
+  html body .members-page .member-grid { grid-template-columns: repeat(3, 220px) !important; }
 }
 @media (max-width: 960px) {
-  .members-page .faculty-grid { grid-template-columns: repeat(2, 220px) !important; }
-  .members-page .member-grid { grid-template-columns: repeat(2, 220px) !important; }
+  html body .members-page .faculty-grid { grid-template-columns: repeat(1, 220px) !important; }
+  html body .members-page .member-grid { grid-template-columns: repeat(2, 220px) !important; }
 }
-@media (max-width: 600px) {
-  /* 手机端居中单列 */
-  .members-page .faculty-grid,
-  .members-page .member-grid { 
-    grid-template-columns: repeat(1, 220px) !important; 
-    justify-content: center !important;
-  }
+@media (max-width: 560px) {
+  html body .members-page .member-grid { grid-template-columns: repeat(1, 220px) !important; }
+  /* 手机端居中 */
+  html body .members-page .faculty-grid,
+  html body .members-page .member-grid { justify-content: center !important; }
 }
 </style>
 
