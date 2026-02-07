@@ -1,10 +1,12 @@
-# main links
 main:
-  - title: "课题组简介"
+  - title: "团队简介"
     url: /
 
-  - title: "成员介绍"
+  - title: "团队成员"
     url: /members/
 
-  - title: "团建活动"
+  - title: "团队成果"
+    url: /achievements/
+
+  - title: "团队新闻"
     url: /activities/
