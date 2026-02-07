@@ -7,7 +7,7 @@ classes: wide members-page
 description: "Star-Lab 课题组成员"
 ---
 
-## 教师
+## 教师与博士后
 
 <div class="faculty-grid">
   <article class="faculty-card">
@@ -19,7 +19,7 @@ description: "Star-Lab 课题组成员"
     </div>
     <div class="faculty-name">计卫星</div>
     <div class="faculty-info">
-      <h4>计卫星（教授）</h4>
+      <h4>教授</h4>
       <p><a href="https://ai.bnu.edu.cn/xygk/szdw/zgj/71b78ada5c214438ba5026d0ff6d61a3.htm" target="_blank" rel="noopener">个人主页</a></p>
     </div>
   </article>
@@ -33,26 +33,24 @@ description: "Star-Lab 课题组成员"
     </div>
     <div class="faculty-name">高建花</div>
     <div class="faculty-info">
-      <h4>高建花（讲师）</h4>
+      <h4>讲师</h4>
       <p><a href="https://ai.bnu.edu.cn/xygk/szdw/zj/8730b86554214b389bbedf5a5d137092.htm" target="_blank" rel="noopener">个人主页</a></p>
     </div>
   </article>
 
-   <article class="faculty-card">
+  <article class="faculty-card">
     <div class="faculty-photo-shell">
       <img class="faculty-photo"
            src="{{ '/images/members/shi-jianjun.jpg' | relative_url }}"
            alt="石剑君"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="faculty-name">高建花</div>
+    <div class="faculty-name">石剑君</div>
     <div class="faculty-info">
-      <h4>石剑君（博士后）</h4>
+      <h4>博士后</h4>
     </div>
   </article>
 </div>
-
-
 
 ---
 
@@ -90,10 +88,10 @@ description: "Star-Lab 课题组成员"
     </div>
     <div class="member-name">刘敬民</div>
   </div>
-
 </div>
 
 ---
+
 ### 硕士生
 
 <div class="member-grid">
