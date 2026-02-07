@@ -12,11 +12,11 @@ description: "Star-Lab 成员介绍：计卫星、高建花、石剑君、刘秉
 <div class="member-grid">
 
   <div class="member-card">
-    <img src="{{ '/images/members/ji-weixing.jpg' | relative_url }}" alt="计卫星" />
+    <img src="../images/members/ji-weixing.jpg" alt="计卫星" />
     <h3>计卫星</h3>
     <p><strong>职务：</strong>北京师范大学人工智能学院 教授</p>
     <p><strong>研究方向：</strong>计算机体系结构、并行与高性能计算、代码分析与优化、大模型推理优化</p>
-    <p><a href="计卫星主页链接" target="_blank" rel="noopener">个人主页</a></p>
+    <p><a href="https://ai.bnu.edu.cn/xygk/szdw/zgj/71b78ada5c214438ba5026d0ff6d61a3.htm" target="_blank" rel="noopener">个人主页</a></p>
   </div>
 
   <div class="member-card">
@@ -24,7 +24,7 @@ description: "Star-Lab 成员介绍：计卫星、高建花、石剑君、刘秉
     <h3>高建花</h3>
     <p><strong>职务：</strong>北京师范大学人工智能学院 讲师</p>
     <p><strong>研究方向：</strong>计算机体系结构、并行与高性能计算、大模型推理优化</p>
-    <p><a href="高建花主页链接" target="_blank" rel="noopener">个人主页</a></p>
+    <p><a href="https://ai.bnu.edu.cn/xygk/szdw/zj/8730b86554214b389bbedf5a5d137092.htm" target="_blank" rel="noopener">个人主页</a></p>
   </div>
 
   <div class="member-card">
