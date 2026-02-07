@@ -7,10 +7,10 @@
 
 # Site Settings
 locale: "zh-CN"
-title: "Star-Lab"
+title: "BNU-SYS"
 title_separator          : "-"
 name                     : &name "BNU-SYS"
-description              : &description "Star-Lab 聚焦计算机体系结构、并行与高性能计算、代码分析与优化、大模型推理优化。"
+description              : &description "BNU-SYS 聚焦计算机体系结构、并行与高性能计算、代码分析与优化、大模型推理优化。"
 url                      : https://bnu-sys.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bnu-sys/bnu-sys.github.io"

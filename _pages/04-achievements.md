@@ -4,7 +4,7 @@ permalink: /achievements/
 layout: single
 author_profile: false
 classes: wide
-description: "Star-Lab 团队成果：论文、专利与软件系统。"
+description: "BNU-SYS 团队成果：论文、专利与软件系统。"
 ---
 
 <section class="results-hero">

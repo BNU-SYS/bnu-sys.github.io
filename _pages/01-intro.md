@@ -1,18 +1,18 @@
 ---
-title: "Star-Lab"
+title: "BNU-SYS"
 permalink: /
 layout: single
 author_profile: false
 classes: wide
-description: "Star-Lab，聚焦计算机体系结构、并行与高性能计算、代码分析与优化、大模型推理优化。"
+description: "BNU-SYS，聚焦计算机体系结构、并行与高性能计算、代码分析与优化、大模型推理优化。"
 ---
 
 <section class="star-hero">
   <!-- <p class="star-kicker">Beijing Normal University · School of Artificial Intelligence</p>
-  <h1>Star-Lab</h1> -->
+  <h1>BNU-SYS</h1> -->
   <!-- <p class="star-tagline">面向智能计算时代的系统底层研究</p> -->
   <p class="star-summary">
-    Star-Lab 立足计算机系统核心问题，围绕“体系结构—编译优化—并行计算—大模型推理”开展系统化研究，
+    BNU-SYS 立足计算机系统核心问题，围绕“体系结构—编译优化—并行计算—大模型推理”开展系统化研究，
     强调理论严谨、工程可复现与真实场景可落地。
   </p>
 
@@ -58,6 +58,6 @@ description: "Star-Lab，聚焦计算机体系结构、并行与高性能计算�
 ## 课题组合照
 
 <figure class="star-figure">
-  <img src="../images/group-photo.jpg" alt="Star-Lab 课题组合照" class="img-fluid" />
-  <figcaption>Star-Lab 团队协作与研究交流</figcaption>
+  <img src="../images/group-photo.jpg" alt="BNU-SYS 课题组合照" class="img-fluid" />
+  <figcaption>BNU-SYS 团队协作与研究交流</figcaption>
 </figure>
