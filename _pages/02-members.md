@@ -12,7 +12,7 @@ description: "Star-Lab 成员介绍：计卫星、高建花、石剑君、刘秉
 <div class="member-grid">
 
   <div class="member-card">
-    <img src="../images/members/ji-weixing.jpg" alt="计卫星" />
+    <img src="{{ '/images/members/ji-weixing.jpg' | relative_url }}" alt="计卫星" />
     <h3>计卫星</h3>
     <p><strong>职务：</strong>北京师范大学人工智能学院 教授</p>
     <p><strong>研究方向：</strong>计算机体系结构、并行与高性能计算、代码分析与优化、大模型推理优化</p>
