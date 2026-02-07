@@ -180,7 +180,7 @@ description: "Star-Lab 课题组成员"
       <img class="member-photo" src="{{ '/images/members/liu-bingxin.jpg' | relative_url }}" alt="刘秉鑫"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="member-name">刘秉鑫</div>
+    <div class="member-name">刘秉鑫（2024级）</div>
   </div>
 
   <div class="member-card">
@@ -188,7 +188,7 @@ description: "Star-Lab 课题组成员"
       <img class="member-photo" src="{{ '/images/members/ge-danying.jpg' | relative_url }}" alt="葛丹颖"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="member-name">葛丹颖</div>
+    <div class="member-name">葛丹颖（2025级）</div>
   </div>
 
   <div class="member-card">
@@ -196,7 +196,7 @@ description: "Star-Lab 课题组成员"
       <img class="member-photo" src="{{ '/images/members/liu-pan.jpg' | relative_url }}" alt="刘攀"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="member-name">刘攀</div>
+    <div class="member-name">刘攀（2025级）</div>
   </div>
 
   <div class="member-card">
@@ -204,7 +204,7 @@ description: "Star-Lab 课题组成员"
       <img class="member-photo" src="{{ '/images/members/liu-jingmin.jpg' | relative_url }}" alt="刘敬民"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="member-name">刘敬民</div>
+    <div class="member-name">刘敬民（2025级）</div>
   </div>
 </div>
 
@@ -218,7 +218,7 @@ description: "Star-Lab 课题组成员"
       <img class="member-photo" src="{{ '/images/members/zhang-yuxiang.jpg' | relative_url }}" alt="张寓祥"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="member-name">张寓祥</div>
+    <div class="member-name">张寓祥（2023级）</div>
   </div>
 
   <div class="member-card">
@@ -226,7 +226,7 @@ description: "Star-Lab 课题组成员"
       <img class="member-photo" src="{{ '/images/members/huang-yinghui.jpg' | relative_url }}" alt="黄颖晖"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="member-name">黄颖晖</div>
+    <div class="member-name">黄颖晖（2024级）</div>
   </div>
 
   <div class="member-card">
@@ -234,7 +234,7 @@ description: "Star-Lab 课题组成员"
       <img class="member-photo" src="{{ '/images/members/wang-zeyin.jpg' | relative_url }}" alt="王泽胤"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="member-name">王泽胤</div>
+    <div class="member-name">王泽胤（2024级）</div>
   </div>
 
   <div class="member-card">
@@ -242,7 +242,7 @@ description: "Star-Lab 课题组成员"
       <img class="member-photo" src="{{ '/images/members/xiao-meihao.jpg' | relative_url }}" alt="肖美浩"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="member-name">肖美浩</div>
+    <div class="member-name">肖美昊（2024级）</div>
   </div>
 
   <div class="member-card">
@@ -250,7 +250,7 @@ description: "Star-Lab 课题组成员"
       <img class="member-photo" src="{{ '/images/members/jiang-qizhi.jpg' | relative_url }}" alt="蒋祺至"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="member-name">蒋祺至</div>
+    <div class="member-name">蒋祺至（2024级）</div>
   </div>
 
   <div class="member-card">
@@ -258,7 +258,7 @@ description: "Star-Lab 课题组成员"
       <img class="member-photo" src="{{ '/images/members/yang-yixue.jpg' | relative_url }}" alt="杨怡雪"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="member-name">杨怡雪</div>
+    <div class="member-name">杨怡雪（2025级）</div>
   </div>
 
   <div class="member-card">
@@ -266,7 +266,7 @@ description: "Star-Lab 课题组成员"
       <img class="member-photo" src="{{ '/images/members/hu-lu.jpg' | relative_url }}" alt="胡璐"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="member-name">胡璐</div>
+    <div class="member-name">胡璐（2025级）</div>
   </div>
 
   <div class="member-card">
@@ -274,7 +274,7 @@ description: "Star-Lab 课题组成员"
       <img class="member-photo" src="{{ '/images/members/ma-wenbo.jpg' | relative_url }}" alt="马文博"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="member-name">马文博</div>
+    <div class="member-name">马文博（2025级）</div>
   </div>
 
   <div class="member-card">
