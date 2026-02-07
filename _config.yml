@@ -6,11 +6,11 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-US"
-title                    : "BNU-SYS LAB's Homepage"
+locale: "zh-CN"
+title: "Star-Lab"
 title_separator          : "-"
 name                     : &name "BNU-SYS"
-description              : &description "A research lab focusing on computer system"
+description              : &description "Star-Lab 聚焦计算机体系结构、并行与高性能计算、代码分析与优化、大模型推理优化。"
 url                      : https://bnu-sys.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bnu-sys/bnu-sys.github.io"

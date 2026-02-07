@@ -5,3 +5,83 @@
 .markdown-body {
   font-family: 'Times New Roman', Times, serif;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --star-blue: #1f4e79;
+  --star-black: #111111;
+  --star-gray: #6b7280;
+  --star-light: #f5f7fa;
+  --star-white: #ffffff;
+}
+
+html, body {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  color: var(--star-black);
+  background: var(--star-white);
+}
+
+a { color: var(--star-blue); }
+a:hover { text-decoration: underline; }
+
+.page__title, h1, h2, h3 {
+  color: var(--star-black);
+  font-weight: 700;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.member-card {
+  border: 1px solid #e5e7eb;
+  background: var(--star-white);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.member-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.activity-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.activity-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  background: var(--star-light);
+}
+
+.activity-item img {
+  width: 100%;
+  max-width: 820px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 响应式 */
+@media (max-width: 900px) {
+  .member-grid { grid-template-columns: 1fr; }
+}
+
