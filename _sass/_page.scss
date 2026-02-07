@@ -450,3 +450,85 @@
   line-height: 1.8;
 }
 
+/* ===== Members Page: Star-Lab ===== */
+.members-page .page__content h2 {
+  margin-top: 1.4rem;
+  border-left: 4px solid #1f4e79;
+  padding-left: 10px;
+}
+
+.members-page .page__content h3 {
+  margin-top: 0.6rem;
+  margin-bottom: 0.8rem;
+  color: #1f2937;
+}
+
+.m-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  margin: 8px 0 18px 0;
+}
+
+.m-grid-teacher {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.m-grid-postdoc {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.m-grid-student {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.m-student-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.m-card {
+  border: 1px solid #d1d5db;
+  background: #f3f4f6;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.m-photo {
+  width: 100% !important;
+  aspect-ratio: 3 / 4;   /* 统一照片比例 */
+  object-fit: cover !important;
+  object-position: center top !important;
+  display: block;
+  background: #e5e7eb;
+}
+
+.m-name {
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #4b5563;
+  padding: 14px 8px 16px;
+  background: #f3f4f6;
+  line-height: 1.2;
+}
+
+/* 响应式 */
+@media (max-width: 1200px) {
+  .m-grid-student { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 900px) {
+  .m-student-columns { grid-template-columns: 1fr; }
+  .m-grid-teacher, .m-grid-postdoc, .m-grid-student {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .m-grid-teacher, .m-grid-postdoc, .m-grid-student {
+    grid-template-columns: 1fr;
+  }
+}
+
