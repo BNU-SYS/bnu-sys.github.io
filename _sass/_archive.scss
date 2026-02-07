@@ -243,3 +243,12 @@
     }
   }
 }
+
+@media (min-width: 64em) {
+  .archive {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    float: none !important;
+  }
+}

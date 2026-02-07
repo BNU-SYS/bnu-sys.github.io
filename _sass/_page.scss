@@ -6,21 +6,23 @@
   @include container;
   @include clearfix;
   margin-top: 2em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1rem;
+  padding-right: 1rem;
   animation: intro 0.3s both;
   animation-delay: 0.35s;
 
   @include breakpoint($x-large) {
-    max-width: $x-large;
+    max-width: 1600px;  // 可改 1500~1800
   }
 }
 
+
 .page {
   @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    @include span(12 of 12);
+    @include prefix(0 of 12);
+    @include suffix(0 of 12);
+    float: none;
   }
 
   .page__inner-wrap {
@@ -33,6 +35,7 @@
     }
   }
 }
+
 
 .page__title {
   margin-top: 0;
