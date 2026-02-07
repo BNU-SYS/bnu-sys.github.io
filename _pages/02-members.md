@@ -21,9 +21,9 @@ description: "Star-Lab 课题组成员"
            alt="计卫星"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.png' | relative_url }}';">
     </div>
-    <div class="faculty-name">计卫星</div>
+    <div class="faculty-name">计卫星（教授）</div>
     <div class="faculty-info">
-      <h4>教授</h4>
+      
       <p><a href="https://ai.bnu.edu.cn/xygk/szdw/zgj/71b78ada5c214438ba5026d0ff6d61a3.htm" target="_blank" rel="noopener">个人主页</a></p>
     </div>
   </article>
@@ -35,9 +35,9 @@ description: "Star-Lab 课题组成员"
            alt="高建花"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="faculty-name">高建花</div>
+    <div class="faculty-name">高建花（讲师）</div>
     <div class="faculty-info">
-      <h4>讲师</h4>
+
       <p><a href="https://ai.bnu.edu.cn/xygk/szdw/zj/8730b86554214b389bbedf5a5d137092.htm" target="_blank" rel="noopener">个人主页</a></p>
     </div>
   </article>
@@ -49,9 +49,9 @@ description: "Star-Lab 课题组成员"
            alt="石剑君"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
-    <div class="faculty-name">石剑君</div>
+    <div class="faculty-name">石剑君（博士后）</div>
     <div class="faculty-info">
-      <h4>博士后</h4>
+
     </div>
   </article>
 </div>
