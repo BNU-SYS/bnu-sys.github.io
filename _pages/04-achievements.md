@@ -29,10 +29,10 @@ description: "Star-Lab 团队成果：论文、专利与软件。"
 
     <div class="ach-links">
       {% if p.pdf %}<a href="{{ p.pdf }}" target="_blank" rel="noopener">[PDF]</a>{% endif %}
-      {% if p.slides %}<a href="{{ p.slides }}" target="_blank" rel="noopener">[Slides]</a>{% endif %}
-      {% if p.doi %}<a href="{{ p.doi }}" target="_blank" rel="noopener">[DOI]</a>{% endif %}
-      {% if p.bibtex %}<a href="{{ p.bibtex }}" target="_blank" rel="noopener">[Bibtex]</a>{% endif %}
-      {% if p.code %}<a href="{{ p.code }}" target="_blank" rel="noopener">[Code]</a>{% endif %}
+      <!-- {% if p.slides %}<a href="{{ p.slides }}" target="_blank" rel="noopener">[Slides]</a>{% endif %}
+      <!-- {% if p.doi %}<a href="{{ p.doi }}" target="_blank" rel="noopener">[DOI]</a>{% endif %}
+      <!-- {% if p.bibtex %}<a href="{{ p.bibtex }}" target="_blank" rel="noopener">[Bibtex]</a>{% endif %} -->
+      <!-- {% if p.code %}<a href="{{ p.code }}" target="_blank" rel="noopener">[Code]</a>{% endif %} --> --> -->
     </div>
   </div>
 </div>
