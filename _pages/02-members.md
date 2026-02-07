@@ -10,7 +10,7 @@ description: "Star-Lab 课题组成员"
 
 <div class="members-fw" markdown="1">
 
-## 教师
+<h2 class="members-title">教师</h2>
 
 <div class="faculty-grid">
   <article class="faculty-card">
@@ -53,7 +53,7 @@ description: "Star-Lab 课题组成员"
 
 ---
 
-### 博士生
+<h3 class="members-subtitle">博士生</h3>
 
 <div class="member-grid">
   <div class="member-card">
@@ -107,7 +107,7 @@ description: "Star-Lab 课题组成员"
 
 ---
 
-### 硕士生
+<h3 class="members-subtitle">硕士生</h3>
 
 <div class="member-grid">
   <div class="member-card">
