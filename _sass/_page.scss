@@ -828,3 +828,32 @@ $site-max-width: 1180px;
     grid-template-columns: repeat(1, 220px) !important;
   }
 }
+/* ===== HARD LOCK: 成员页照片绝对统一 ===== */
+.members-page .members-fw .faculty-card,
+.members-page .members-fw .member-card {
+  width: 220px !important;
+}
+
+/* 固定照片容器尺寸（教师/学生完全一致） */
+.members-page .members-fw .faculty-photo-shell,
+.members-page .members-fw .member-photo-shell {
+  position: relative !important;
+  width: 100% !important;
+  height: 300px !important;   /* 统一高度 */
+  padding: 0 !important;      /* 去掉壳子的额外内边距差异 */
+  overflow: hidden !important;
+  background: #efefef !important;
+  border-bottom: 1px solid #e5e7eb !important;
+}
+
+/* 图片填满容器 */
+.members-page .members-fw .faculty-photo,
+.members-page .members-fw .member-photo {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  display: block !important;
+}
