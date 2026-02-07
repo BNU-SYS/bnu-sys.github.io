@@ -75,6 +75,6 @@ description: "北京师范大学人工智能学院 BNU-SYS 招生与招聘公告
 
 ## 四、联系方式
 
-- 联系邮箱：`BNU-SYS@bnu.edu.cn`  
+- 联系邮箱：`bnujwx@outlook.com`  
 - 邮件主题建议：`申请类别-姓名-学校/单位-研究方向`  
 

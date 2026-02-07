@@ -55,9 +55,6 @@ description: "BNU-SYS，聚焦计算机体系结构、并行与高性能计算�
          src="{{ '/images/group/group-01.jpg' | relative_url }}">
 
     <img class="sg-image"
-         src="{{ '/images/group/group-02.jpg' | relative_url }}">
-
-    <img class="sg-image"
          src="{{ '/images/group/group-03.jpg' | relative_url }}">
 
     <img class="sg-image"
