@@ -854,7 +854,11 @@ $site-max-width: 1180px;
   display: block !important;
 }
 
-.ach-year{
-  margin: 1.2rem 0 0.8rem;
+/* achievements year heading: force same size as members-subtitle */
+.page__content h3.ach-year {
+  font-size: 1.6rem !important;   /* 可改成你想要的值，如 1.6rem */
+  line-height: 1.25 !important;
+  font-weight: 700 !important;
+  margin: 1rem 0 0.75rem !important;
 }
 
