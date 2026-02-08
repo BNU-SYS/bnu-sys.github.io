@@ -1,5 +1,5 @@
 ---
-title: "团队成果"
+title: "成果展示"
 permalink: /achievements/
 layout: single
 author_profile: false
