@@ -8,7 +8,7 @@ description: "Star-Lab 团队成果：论文、专利与软件。"
 ---
 
 {% for y in site.data.achievements.years %}
-<h2 class="ach-year">{{ y.year }}</h2>
+<h3 class="members-subtitle ach-year">{{ y.year }}</h3>
 
 {% for p in y.papers %}
 <div class="ach-item">
