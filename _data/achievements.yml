@@ -6,7 +6,7 @@ years:
       methods in Java projects'
     venue: Automated Software Engineering
     year: 2026
-    thumb: /images/papers/default.png
+    thumb: /images/papers/JDExtractor_an_automated_approach_for_efficient.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -29,7 +29,7 @@ years:
     title: 'RaNAS: Resource-aware neural architecture search for edge computing'
     venue: ACM Transactions on Architecture and Code Optimization
     year: 2025
-    thumb: /images/papers/default.png
+    thumb: /images/papers/RaNAS_Resource_Aware_Neural_Architecture.jpg
     pdf: ''
     slides: ''
     doi: ''
