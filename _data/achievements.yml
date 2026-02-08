@@ -1,58 +1,49 @@
 years:
 - year: 2026
   papers:
-  - authors: Tianyang Liu, Jiawei Ye, Weixing Ji
+  - authors: Liu, Tianyang, Ye, Jiawei, Ji, Weixing
     title: 'JDExtractor: an automated approach for efficient extraction of defect-related
-
       methods in Java projects'
-    venue: Autom. Softw. Eng.
+    venue: Automated Software Engineering
     year: 2026
     thumb: /images/papers/default.png
-    pdf: https://doi.org/10.1007/s10515-025-00563-z
+    pdf: ''
     slides: ''
-    doi: https://doi.org/10.1007/S10515-025-00563-Z
+    doi: ''
     bibtex: ''
     code: ''
 - year: 2025
   papers:
-  - authors: Xiangping Chen, Xing Hu, Yuan Huang, He Jiang, Weixing Ji, Yanjie Jiang,
-      Yanyan Jiang, Bo Liu, Hui Liu, Xiaochen Li, Xiaoli Lian, Guozhu Meng, Xin Peng,
-      Hailong Sun, Lin Shi, Bo Wang, Chong Wang, Jiayi Wang, Tiantian Wang, Jifeng
-      Xuan, Xin Xia, Yibiao Yang, Yixin Yang, Li Zhang, Yuming Zhou, Lu Zhang
-    title: 'Deep learning-based software engineering: progress, challenges, and
-
-      opportunities'
-    venue: Sci. China Inf. Sci.
+  - authors: Chen, Xiangping, Hu, Xing, Huang, Yuan, Jiang, He, Ji, Weixing, Jiang,
+      Yanjie, Jiang, Yanyan, Liu, Bo, Liu, Hui, Li, Xiaochen, others
+    title: 'Deep learning-based software engineering: progress, challenges, and opportunities'
+    venue: Science China Information Sciences
     year: 2025
     thumb: /images/papers/default.png
-    pdf: https://doi.org/10.1007/s11432-023-4127-5
+    pdf: ''
     slides: ''
-    doi: https://doi.org/10.1007/S11432-023-4127-5
+    doi: ''
     bibtex: ''
     code: ''
-  - authors: Danying Ge, Jianhua Gao, Yixue Yang, Weixing Ji
-    title: 'HA-RAG: Hotness-Aware RAG Acceleration via Mixed Precision and
-
-      Data Placement'
-    venue: CoRR
+  - authors: Gao, Jianhua, Liu, Zeming, Wang, Yizhuo, Ji, Weixing
+    title: 'RaNAS: Resource-aware neural architecture search for edge computing'
+    venue: ACM Transactions on Architecture and Code Optimization
     year: 2025
     thumb: /images/papers/default.png
-    pdf: https://doi.org/10.48550/arXiv.2510.20878
+    pdf: ''
     slides: ''
-    doi: https://doi.org/10.48550/ARXIV.2510.20878
+    doi: ''
     bibtex: ''
     code: ''
-  - authors: Yanjie Jiang, Fu Fan, Wei Wei, Xiaye Chi, Yunni Xia, Yu{-}Xia Zhang,
-      Wei{-}Xing Ji, Hui Liu
-    title: 'ValExtractor: Reliable Automated Local Variable Extraction in Code
-
-      Refactoring'
-    venue: J. Comput. Sci. Technol.
+  - authors: Jiang, Yanjie, Chi, Xiaye, Zhang, Yuxia, Ji, Weixing, Li, Guangjie, Wang,
+      Weixiao, Xia, Yunni, Zhang, Lu, Liu, Hui
+    title: Automated Recommendation of Extracting Local Variable Refactorings
+    venue: ACM Transactions on Software Engineering and Methodology
     year: 2025
     thumb: /images/papers/default.png
-    pdf: https://doi.org/10.1007/s11390-025-5133-5
+    pdf: ''
     slides: ''
-    doi: https://doi.org/10.1007/S11390-025-5133-5
+    doi: ''
     bibtex: ''
     code: ''
   - authors: Wang, Yizhuo, Lin, Hongpeng, Wei, Bingxin, Gao, Jianhua, Ji, Weixing
@@ -65,59 +56,283 @@ years:
     doi: ''
     bibtex: ''
     code: ''
+  - authors: Ge, Danying, Gao, Jianhua, Yang, Yixue, Ji, Weixing
+    title: 'HA-RAG: Hotness-Aware RAG Acceleration via Mixed Precision and Data Placement'
+    venue: arXiv preprint arXiv:2510.20878
+    year: 2025
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Jiang, Yan-Jie, Fan, Fu, Wei, Wei, Chi, Xia-Ye, Xia, Yun-Ni, Zhang, Yu-Xia,
+      Ji, Wei-Xing, Liu, Hui
+    title: 'ValExtractor: Reliable Automated Local Variable Extraction in Code Refactoring'
+    venue: Journal of Computer Science and Technology
+    year: 2025
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Ge, Danying, Gao, Jianhua, Jiang, Qizhi, Feng, Yifei, Ji, Weixing
+    title: Automatic Task Detection and Heterogeneous LLM Speculative Decoding
+    venue: arXiv preprint arXiv:2505.08600
+    year: 2025
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Han, Yanpeng, Wang, Yizhuo, Liu, Fawang, Gao, Jianhua, Ji, Weixing
+    title: Adaptive point cloud compression based on precision-aware floating-point
+      encoding
+    venue: CCF Transactions on High Performance Computing
+    year: 2025
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Liu, Tianyang, Ye, Jiawei, Ji, Weixing, Liu, Hui
+    title: 'Detection of Resource Leaks in Java Programs: Effectiveness Analysis of
+      Traditional Models and Language Models.'
+    venue: International Journal of Software \& Informatics
+    year: 2025
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Gao, Jianhua, Zhou, Zhi, Huang, Xingze, Wang, Juan, Wang, Yizhuo, Ji,
+      Weixing
+    title: 'PTPS: Precision-Aware Task Partitioning and Scheduling for SpMV on CPU-FPGA
+      Heterogeneous Platforms'
+    venue: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems
+    year: 2025
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Jiang, Yanjie, Liu, Hui, Liu, Jinyan, Zhang, Yuxia, Ji, Weixing, Zhong,
+      Hao, Zhang, Lu
+    title: An Empirical Study on the Relationship Between Defects and Source Code’s
+      Unnaturalness
+    venue: ACM Transactions on Software Engineering and Methodology
+    year: 2025
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+- year: 2024
+  papers:
+  - authors: Gao, Jianhua, Liu, Bingjie, Ji, Weixing, Huang, Hua
+    title: A systematic literature survey of sparse matrix-vector multiplication
+    venue: arXiv preprint arXiv:2404.06047
+    year: 2024
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Gao, Jianhua, Ji, Weixing, Wang, Yizhuo
+    title: Optimization of large-scale sparse matrix-vector multiplication on multi-gpu
+      systems
+    venue: ACM Transactions on Architecture and Code Optimization
+    year: 2024
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Gao, Jianhua, Ji, Weixing, Liu, Jie, Wang, Yizhuo, Shi, Feng
+    title: 'Revisiting thread configuration of SpMV kernels on GPU: A machine learning
+      based approach'
+    venue: Journal of Parallel and Distributed Computing
+    year: 2024
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Wang, Yizhuo, Chang, Fangli, Wei, Bingxin, Gao, Jianhua, Ji, Weixing
+    title: Optimization of sparse matrix computation for algebraic multigrid on gpus
+    venue: ACM Transactions on Architecture and Code Optimization
+    year: 2024
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Liu, Tianyang, Ji, Weixing, Dong, Xiaohui, Yao, Wuhuang, Wang, Yizhuo,
+      Liu, Hui, Peng, Haiyang, Wang, Yuxuan
+    title: 'Jleaks: A featured resource leak repository collected from hundreds of
+      open-source java projects'
+    venue: Proceedings of the IEEE/ACM 46th International Conference on Software Engineering
+    year: 2024
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Bai, Lu, Ji, Weixing, Li, Qinyuan, Yao, Xilai, Xin, Wei, Zhu, Wanyi
+    title: 'ConvDarts: A fast and exact convolutional algorithm selector for deep
+      learning frameworks'
+    venue: CCF Transactions on High Performance Computing
+    year: 2024
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Gao, Jianhua, Shen, Jiayuan, Zhang, Yuxiang, Ji, Weixing, Huang, Hua
+    title: Precision-Aware Iterative Algorithms Based on Group-Shared Exponents of
+      Floating-Point Numbers
+    venue: arXiv preprint arXiv:2411.04686
+    year: 2024
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Liu, Jie, Wang, Yizhuo, Gao, Jianhua, Ji, Weixing
+    title: 'pSpMv: precision-based sparse matrix partition and SpMV optimization'
+    venue: CCF Transactions on High Performance Computing
+    year: 2024
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Gao, Jianhua, Liu, Bingjie, Wang, Yizhuo, Ji, Weixing, Huang, Hua
+    title: Cascaded Prediction and Asynchronous Execution of Iterative Algorithms
+      on Heterogeneous Platforms
+    venue: arXiv preprint arXiv:2411.10143
+    year: 2024
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Wei, Bingxin, Wang, Yizhuo, Chang, Fangli, Gao, Jianhua, Ji, Weixing
+    title: Predicting optimal sparse general matrix-matrix multiplication algorithm
+      on GPUs
+    venue: The International Journal of High Performance Computing Applications
+    year: 2024
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Zhang, Yuxiang, Guo, Shuaizhe, Gao, Jianhua, Ji, Weixing, Wang, Yizhuo
+    title: Load Balancing Optimizations for Distributed GMRES Algorithm
+    venue: International Conference on Algorithms and Architectures for Parallel Processing
+    year: 2024
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: ZHOU, Zhi, GAO, Jian-hua, JI, Wei-xing
+    title: Optimization of sparse matrix-vector multiplication based on FPGA and row
+      folding
+    venue: Computer Engineering \& Science
+    year: 2024
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
 - year: 2023
   papers:
-  - authors: Jianhua Gao, Weixing Ji, Fangli Chang, Shiyu Han, Bingxin Wei, Zeming
-      Liu, Yizhuo Wang
-    title: A Systematic Survey of General Sparse Matrix-matrix Multiplication
-    venue: ACM Comput. Surv.
+  - authors: Gao, Jianhua, Ji, Weixing, Chang, Fangli, Han, Shiyu, Wei, Bingxin, Liu,
+      Zeming, Wang, Yizhuo
+    title: A systematic survey of general sparse matrix-matrix multiplication
+    venue: ACM Computing Surveys
     year: 2023
     thumb: /images/papers/default.png
-    pdf: https://doi.org/10.1145/3571157
+    pdf: ''
     slides: ''
-    doi: https://doi.org/10.1145/3571157
+    doi: ''
     bibtex: ''
     code: ''
-- year: 2018
-  papers:
-  - authors: Akrem Benatia, Weixing Ji, Yizhuo Wang, Feng Shi
-    title: 'BestSF: A Sparse Meta-Format for Optimizing SpMV on GPU'
-    venue: ACM Trans. Archit. Code Optim.
-    year: 2018
+  - authors: Yao, Xilai, Wang, Yizhuo, Ji, Weixing, Chen, Qiurui
+    title: An Automatic Deployment Method for Hybrid Cloud Simulation Platform
+    venue: International Symposium on Advanced Parallel Processing Technologies
+    year: 2023
     thumb: /images/papers/default.png
-    pdf: https://doi.org/10.1145/3226228
+    pdf: ''
     slides: ''
-    doi: https://doi.org/10.1145/3226228
+    doi: ''
     bibtex: ''
     code: ''
-- year: 2016
+- year: 2022
   papers:
-  - authors: Akrem Benatia, Weixing Ji, Yizhuo Wang, Feng Shi
-    title: Sparse Matrix Format Selection with Multiclass SVM for SpMV on GPU
-    venue: '45th International Conference on Parallel Processing, ICPP 2016,
-
-      Philadelphia, PA, USA, August 16-19, 2016'
-    year: 2016
+  - authors: Bai, Lu, Ji, Weixing, Li, Qinyuan, Yao, Xilai, Xin, Wei, Zhu, Wanyi
+    title: 'Dnnabacus: Toward accurate computational cost prediction for deep neural
+      networks'
+    venue: arXiv preprint arXiv:2205.12095
+    year: 2022
     thumb: /images/papers/default.png
-    pdf: https://doi.org/10.1109/ICPP.2016.64
+    pdf: ''
     slides: ''
-    doi: https://doi.org/10.1109/ICPP.2016.64
+    doi: ''
     bibtex: ''
     code: ''
-- year: 2007
-  papers:
-  - authors: Feng Shi, Weixing Ji, Baojun Qiao, Bin Liu, Haroon{-}ul{-}Rashid
-    title: A Triplet-based Computer Architecture Supporting Parallel Object Computing
-    venue: 'IEEE International Conference on Application-Specific Systems, Architectures
-
-      and Processors, ASAP 2007, Montr\''eal, Qu\''ebec,
-
-      Canada, July 8-11, 2007'
-    year: 2007
+  - authors: Gao, Jianhua, Ji, Weixing, Tan, Zhaonian, Wang, Yizhuo, Shi, Feng
+    title: 'TaiChi: A hybrid compression format for binary sparse matrix-vector multiplication
+      on GPU'
+    venue: IEEE Transactions on Parallel and Distributed Systems
+    year: 2022
     thumb: /images/papers/default.png
-    pdf: https://doi.org/10.1109/ASAP.2007.4429979
+    pdf: ''
     slides: ''
-    doi: https://doi.org/10.1109/ASAP.2007.4429979
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Jiang, Yanjie, Liu, Hui, Zhang, Yuxia, Ji, Weixing, Zhong, Hao, Zhang,
+      Lu
+    title: Do bugs lead to unnaturalness of source code?
+    venue: Proceedings of the 30th ACM Joint European Software Engineering Conference
+      and Symposium on the Foundations of Software Engineering
+    year: 2022
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
+    bibtex: ''
+    code: ''
+  - authors: Shao, Senhao, Wang, Yizhuo, Ji, Weixing, Gao, Jianhua
+    title: Towards Optimal Fast Matrix
+    venue: 'Parallel and Distributed Computing, Applications and Technologies: 22nd
+      International Conference, PDCAT 2021, Guangzhou, China, December 17--19, 2021,
+      Proceedings'
+    year: 2022
+    thumb: /images/papers/default.png
+    pdf: ''
+    slides: ''
+    doi: ''
     bibtex: ''
     code: ''
 patents: []
