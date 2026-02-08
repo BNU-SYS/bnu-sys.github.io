@@ -40,7 +40,7 @@ years:
     title: Automated Recommendation of Extracting Local Variable Refactorings
     venue: ACM Transactions on Software Engineering and Methodology
     year: 2025
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Automated_Recommendation_of_Extracting_Local.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -50,7 +50,7 @@ years:
     title: Optimizing General Sparse Matrix-Matrix Multiplication on the GPU
     venue: ACM Transactions on Architecture and Code Optimization
     year: 2025
-    thumb: /images/papers/default.png
+    thumb: /images/papers/optimizing_general_sparse_matrix_matrix.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -60,7 +60,7 @@ years:
     title: 'HA-RAG: Hotness-Aware RAG Acceleration via Mixed Precision and Data Placement'
     venue: arXiv preprint arXiv:2510.20878
     year: 2025
-    thumb: /images/papers/default.png
+    thumb: /images/papers/HA-RAG_Hotness_Aware_RAG_Acceleration.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -71,7 +71,7 @@ years:
     title: 'ValExtractor: Reliable Automated Local Variable Extraction in Code Refactoring'
     venue: Journal of Computer Science and Technology
     year: 2025
-    thumb: /images/papers/default.png
+    thumb: /images/papers/ValExtractor_Reliabe_Automated_Local_Variable.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -81,7 +81,7 @@ years:
     title: Automatic Task Detection and Heterogeneous LLM Speculative Decoding
     venue: arXiv preprint arXiv:2505.08600
     year: 2025
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Automatic_Task_Detection_and_Heterogeneous.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -92,7 +92,7 @@ years:
       encoding
     venue: CCF Transactions on High Performance Computing
     year: 2025
-    thumb: /images/papers/default.png
+    thumb: /images/papers/adaptive_point_cloud_compression_based.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -103,7 +103,7 @@ years:
       Traditional Models and Language Models.'
     venue: International Journal of Software \& Informatics
     year: 2025
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Detection_of_Resource_Leaks_in.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -115,7 +115,7 @@ years:
       Heterogeneous Platforms'
     venue: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems
     year: 2025
-    thumb: /images/papers/default.png
+    thumb: /images/papers/PTPS_Precision_Aware_Task_Partitioning.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -127,7 +127,7 @@ years:
       Unnaturalness
     venue: ACM Transactions on Software Engineering and Methodology
     year: 2025
-    thumb: /images/papers/default.png
+    thumb: /images/papers/An_Empirical_Study_on_the.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -139,7 +139,7 @@ years:
     title: A systematic literature survey of sparse matrix-vector multiplication
     venue: arXiv preprint arXiv:2404.06047
     year: 2024
-    thumb: /images/papers/default.png
+    thumb: /images/papers/A_systematic_literature_survey_of.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -150,7 +150,7 @@ years:
       systems
     venue: ACM Transactions on Architecture and Code Optimization
     year: 2024
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Optimization_of_large_scale_sparse.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -161,7 +161,7 @@ years:
       based approach'
     venue: Journal of Parallel and Distributed Computing
     year: 2024
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Revisiting_thread_configuration_of_SpMV.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -171,7 +171,7 @@ years:
     title: Optimization of sparse matrix computation for algebraic multigrid on gpus
     venue: ACM Transactions on Architecture and Code Optimization
     year: 2024
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Optimization_of_sparse_matrix_computation.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -183,7 +183,7 @@ years:
       open-source java projects'
     venue: Proceedings of the IEEE/ACM 46th International Conference on Software Engineering
     year: 2024
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Jleaks_A_featured_resource_leak.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -194,7 +194,7 @@ years:
       learning frameworks'
     venue: CCF Transactions on High Performance Computing
     year: 2024
-    thumb: /images/papers/default.png
+    thumb: /images/papers/ConvDarts_A_fast_and_exact.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -205,7 +205,7 @@ years:
       Floating-Point Numbers
     venue: arXiv preprint arXiv:2411.04686
     year: 2024
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Precision_Aware_Iterative_Algorithms_Based.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -215,7 +215,7 @@ years:
     title: 'pSpMv: precision-based sparse matrix partition and SpMV optimization'
     venue: CCF Transactions on High Performance Computing
     year: 2024
-    thumb: /images/papers/default.png
+    thumb: /images/papers/pSpMv_precision_based_sparse_matrix.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -226,7 +226,7 @@ years:
       on Heterogeneous Platforms
     venue: arXiv preprint arXiv:2411.10143
     year: 2024
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Cascaded_Prediction_and_Asynchronous_Execution.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -237,7 +237,7 @@ years:
       on GPUs
     venue: The International Journal of High Performance Computing Applications
     year: 2024
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Predicting_optimal_sparse_general_matrix.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -247,7 +247,7 @@ years:
     title: Load Balancing Optimizations for Distributed GMRES Algorithm
     venue: International Conference on Algorithms and Architectures for Parallel Processing
     year: 2024
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Load_Balancing_Optimizations_for_Distributed.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -258,7 +258,7 @@ years:
       folding
     venue: Computer Engineering \& Science
     year: 2024
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Optimization_of_sparse_matrix_vector.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -271,7 +271,7 @@ years:
     title: A systematic survey of general sparse matrix-matrix multiplication
     venue: ACM Computing Surveys
     year: 2023
-    thumb: /images/papers/default.png
+    thumb: /images/papers/A_systematic_survey_of_general.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -281,7 +281,7 @@ years:
     title: An Automatic Deployment Method for Hybrid Cloud Simulation Platform
     venue: International Symposium on Advanced Parallel Processing Technologies
     year: 2023
-    thumb: /images/papers/default.png
+    thumb: /images/papers/An_Automatic_Deployment_Method_for.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -294,7 +294,7 @@ years:
       networks'
     venue: arXiv preprint arXiv:2205.12095
     year: 2022
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Dnnabacus_Toward_accurate_computational_cost.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -305,7 +305,7 @@ years:
       on GPU'
     venue: IEEE Transactions on Parallel and Distributed Systems
     year: 2022
-    thumb: /images/papers/default.png
+    thumb: /images/papers/TaiChi_A_hybrid_compression_format.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -317,7 +317,7 @@ years:
     venue: Proceedings of the 30th ACM Joint European Software Engineering Conference
       and Symposium on the Foundations of Software Engineering
     year: 2022
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Do_bugs_lead_to_unnaturalness.jpg
     pdf: ''
     slides: ''
     doi: ''
@@ -329,7 +329,7 @@ years:
       International Conference, PDCAT 2021, Guangzhou, China, December 17--19, 2021,
       Proceedings'
     year: 2022
-    thumb: /images/papers/default.png
+    thumb: /images/papers/Towards_Optimal_Fast_Matrix.jpg
     pdf: ''
     slides: ''
     doi: ''
