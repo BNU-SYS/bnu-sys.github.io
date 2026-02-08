@@ -39,10 +39,4 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
-/* achievements year heading: force same size as members-subtitle */
-.page__content h3.ach-year {
-  font-size: 1.75rem !important;   /* 可改成你想要的值，如 1.6rem */
-  line-height: 1.25 !important;
-  font-weight: 700 !important;
-  margin: 1rem 0 0.75rem !important;
-}
+

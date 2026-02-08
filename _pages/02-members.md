@@ -23,7 +23,7 @@ description: "Star-Lab 课题组成员"
   padding-left: 10px;
   border-left: 4px solid #1f4e79;
 }
-.members-fw h3{
+.members-fw h2{
   margin: 10px 0 12px;
 }
 
@@ -129,7 +129,7 @@ description: "Star-Lab 课题组成员"
 
 <div class="members-fw">
 
-<h3 class="members-subtitle">教师</h3>
+<h2 class="members-subtitle">教师</h2>
 
 <div class="faculty-grid">
   <article class="faculty-card">
@@ -172,7 +172,7 @@ description: "Star-Lab 课题组成员"
 
 <hr class="members-sep" />
 
-<h3 class="members-subtitle">博士生</h3>
+<h2 class="members-subtitle">博士生</h2>
 
 <div class="member-grid">
   <div class="member-card">
@@ -210,7 +210,7 @@ description: "Star-Lab 课题组成员"
 
 <hr class="members-sep" />
 
-<h3 class="members-subtitle">硕士生</h3>
+<h2 class="members-subtitle">硕士生</h2>
 
 <div class="member-grid">
   <div class="member-card">

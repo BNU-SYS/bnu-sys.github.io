@@ -602,13 +602,13 @@ $site-max-width: 1180px;
 /* ==========================================================================
    Star-Lab: Achievements cards
    ========================================================================== */
-.ach-year {
-  margin-top: 1.8rem;
-  margin-bottom: 0.8rem;
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #111827;
-}
+// .ach-year {
+//   margin-top: 1.8rem;
+//   margin-bottom: 0.8rem;
+//   font-size: 2.2rem;
+//   font-weight: 700;
+//   color: #111827;
+// }
 
 .ach-item {
   display: grid;
@@ -760,12 +760,12 @@ $site-max-width: 1180px;
   line-height: 1.25;
 }
 
-.members-page .members-subtitle {
-  font-size: 2rem;   /* 博士生/硕士生 */
-  font-weight: 700;
-  margin: 1rem 0 0.7rem;
-  line-height: 1.3;
-}
+// .members-page .members-subtitle {
+//   font-size: 2rem;   /* 博士生/硕士生 */
+//   font-weight: 700;
+//   margin: 1rem 0 0.7rem;
+//   line-height: 1.3;
+// }
 /* ===== FINAL LOCK: members 页面照片统一尺寸 ===== */
 .members-page .members-fw .faculty-grid {
   display: grid !important;
@@ -853,4 +853,16 @@ $site-max-width: 1180px;
   object-position: center top !important;
   display: block !important;
 }
+/* ===== 标题字号统一：与 intro 页“## 研究方向”一致 ===== */
+.members-page .members-fw h2.members-subtitle,
+.page__content h2.ach-year {
+  font-size: $type-size-3 !important;  /* 与 h2 同级 */
+  line-height: 1.35 !important;
+  font-weight: 700 !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.8rem !important;
+  border-bottom: none !important;      /* 不要 h2 默认下划线就保留 */
+  padding-bottom: 0 !important;
+}
+
 
