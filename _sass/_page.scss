@@ -445,7 +445,7 @@ $site-max-width: 1180px;
 /* 学生4列 */
 .members-page .member-grid {
   display: grid !important;
-  grid-template-columns: repeat(6, minmax(180px, 1fr)) !important;
+  grid-template-columns: repeat(4, minmax(180px, 1fr)) !important;
   gap: 20px !important;
   margin: 12px 0 24px;
 }
@@ -776,7 +776,7 @@ $site-max-width: 1180px;
 
 .members-page .members-fw .member-grid {
   display: grid !important;
-  grid-template-columns: repeat(4, 220px) !important; /* 学生4列 */
+  grid-template-columns: repeat(6, 220px) !important; /* 学生4列 */
   gap: 20px !important;
   justify-content: start !important;
 }
