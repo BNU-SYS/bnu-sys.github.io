@@ -127,8 +127,8 @@ description: "Star-Lab 课题组成员"
 }
 /* ===== 缩小成员照片尺寸（放在 members.md <style> 最后）===== */
 .members-page .members-fw{
-  --card-w: 190px;   /* 原来 220，改小 */
-  --photo-h: 250px;  /* 原来 300，改小 */
+  --card-w: 150px;   /* 原来 220，改小 */
+  --photo-h: 200px;  /* 原来 300，改小 */
 }
 
 /* 网格列宽 */
