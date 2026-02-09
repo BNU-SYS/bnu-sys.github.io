@@ -12,8 +12,8 @@ description: "Star-Lab 课题组成员"
 <style>
 /* ===== Members page: single source of truth ===== */
 .members-fw{
-  --card-w: 150px;   /* 卡片宽度：改这里 */
-  --photo-h: 200px;  /* 照片高度：改这里 */
+  --card-w: 150px;   /* 卡片宽度 */
+  --photo-h: 200px;  /* 照片高度 */
 
   max-width: 1240px;
   margin: 0 auto;
@@ -35,9 +35,10 @@ description: "Star-Lab 课题组成员"
   margin: 20px 0;
 }
 
-/* 网格 */
+/* 网格通用（新增 master-grid） */
 .members-fw .faculty-grid,
-.members-fw .member-grid{
+.members-fw .member-grid,
+.members-fw .master-grid{
   display: grid !important;
   gap: 16px !important;
   justify-content: center !important;
@@ -45,11 +46,19 @@ description: "Star-Lab 课题组成员"
   margin: 10px 0 18px;
 }
 
+/* 教师 3 列 */
 .members-fw .faculty-grid{
   grid-template-columns: repeat(3, var(--card-w)) !important;
 }
+
+/* 博士生 4 列 */
 .members-fw .member-grid{
   grid-template-columns: repeat(4, var(--card-w)) !important;
+}
+
+/* 硕士生 6 列（关键） */
+.members-fw .master-grid{
+  grid-template-columns: repeat(6, var(--card-w)) !important;
 }
 
 /* 卡片 */
@@ -61,7 +70,7 @@ description: "Star-Lab 课题组成员"
   box-sizing: border-box;
 }
 
-/* 关键：统一照片容器（固定尺寸） */
+/* 照片容器 */
 .members-fw .faculty-photo-shell,
 .members-fw .member-photo-shell{
   position: relative !important;
@@ -74,7 +83,7 @@ description: "Star-Lab 课题组成员"
   box-sizing: border-box;
 }
 
-/* 关键：图片填满容器 */
+/* 图片填满容器 */
 .members-fw .faculty-photo,
 .members-fw .member-photo{
   position: absolute !important;
@@ -118,14 +127,18 @@ description: "Star-Lab 课题组成员"
 @media (max-width: 1200px){
   .members-fw .faculty-grid{ grid-template-columns: repeat(2, var(--card-w)) !important; }
   .members-fw .member-grid{  grid-template-columns: repeat(3, var(--card-w)) !important; }
+  .members-fw .master-grid{  grid-template-columns: repeat(4, var(--card-w)) !important; }
 }
 @media (max-width: 900px){
   .members-fw .faculty-grid{ grid-template-columns: repeat(2, var(--card-w)) !important; }
   .members-fw .member-grid{  grid-template-columns: repeat(2, var(--card-w)) !important; }
+  .members-fw .master-grid{  grid-template-columns: repeat(3, var(--card-w)) !important; }
 }
 @media (max-width: 560px){
   .members-fw .faculty-grid,
-  .members-fw .member-grid{ grid-template-columns: 1fr !important; }
+  .members-fw .member-grid,
+  .members-fw .master-grid{ grid-template-columns: 1fr !important; }
+
   .members-fw .faculty-card,
   .members-fw .member-card{
     width: var(--card-w) !important;
@@ -133,6 +146,7 @@ description: "Star-Lab 课题组成员"
   }
 }
 </style>
+
 
 
 <div class="members-fw">
@@ -220,7 +234,7 @@ description: "Star-Lab 课题组成员"
 
 <h2 class="members-subtitle">硕士生</h2>
 
-<div class="member-grid">
+<div class="master-grid">
   <div class="member-card">
     <div class="member-photo-shell">
       <img class="member-photo" src="{{ '/images/members/zhang-yuxiang.jpg' | relative_url }}" alt="张寓祥"
