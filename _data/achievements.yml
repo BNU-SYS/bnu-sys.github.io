@@ -19,7 +19,7 @@ years:
     title: 'Deep learning-based software engineering: progress, challenges, and opportunities'
     venue: Science China Information Sciences
     year: 2025
-    thumb: /images/papers/deep_learning_based_software_engineering.jpg
+    thumb: /images/papers/Deep_Learning-based_Software.png
     pdf: ''
     slides: ''
     doi: ''
@@ -243,16 +243,16 @@ years:
     doi: ''
     bibtex: ''
     code: ''
-  - authors: Zhang, Yuxiang, Guo, Shuaizhe, Gao, Jianhua, Ji, Weixing, Wang, Yizhuo
-    title: Load Balancing Optimizations for Distributed GMRES Algorithm
-    venue: International Conference on Algorithms and Architectures for Parallel Processing
-    year: 2024
-    thumb: /images/papers/Load_Balancing_Optimizations_for_Distributed.jpg
-    pdf: ''
-    slides: ''
-    doi: ''
-    bibtex: ''
-    code: ''
+  # - authors: Zhang, Yuxiang, Guo, Shuaizhe, Gao, Jianhua, Ji, Weixing, Wang, Yizhuo
+  #   title: Load Balancing Optimizations for Distributed GMRES Algorithm
+  #   venue: International Conference on Algorithms and Architectures for Parallel Processing
+  #   year: 2024
+  #   thumb: /images/papers/Load_Balancing_Optimizations_for_Distributed.jpg
+  #   pdf: ''
+  #   slides: ''
+  #   doi: ''
+  #   bibtex: ''
+  #   code: ''
   - authors: ZHOU, Zhi, GAO, Jian-hua, JI, Wei-xing
     title: Optimization of sparse matrix-vector multiplication based on FPGA and row
       folding
@@ -277,16 +277,16 @@ years:
     doi: ''
     bibtex: ''
     code: ''
-  - authors: Yao, Xilai, Wang, Yizhuo, Ji, Weixing, Chen, Qiurui
-    title: An Automatic Deployment Method for Hybrid Cloud Simulation Platform
-    venue: International Symposium on Advanced Parallel Processing Technologies
-    year: 2023
-    thumb: /images/papers/An_Automatic_Deployment_Method_for.jpg
-    pdf: ''
-    slides: ''
-    doi: ''
-    bibtex: ''
-    code: ''
+  # - authors: Yao, Xilai, Wang, Yizhuo, Ji, Weixing, Chen, Qiurui
+  #   title: An Automatic Deployment Method for Hybrid Cloud Simulation Platform
+  #   venue: International Symposium on Advanced Parallel Processing Technologies
+  #   year: 2023
+  #   thumb: /images/papers/An_Automatic_Deployment_Method_for.jpg
+  #   pdf: ''
+  #   slides: ''
+  #   doi: ''
+  #   bibtex: ''
+  #   code: ''
 - year: 2022
   papers:
   - authors: Bai, Lu, Ji, Weixing, Li, Qinyuan, Yao, Xilai, Xin, Wei, Zhu, Wanyi
