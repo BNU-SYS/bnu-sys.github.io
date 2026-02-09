@@ -10,183 +10,130 @@ description: "Star-Lab 课题组成员"
 ---
 
 <style>
-/* ===== Members page (self-contained) ===== */
+/* ===== Members page: single source of truth ===== */
 .members-fw{
+  --card-w: 150px;   /* 卡片宽度：改这里 */
+  --photo-h: 200px;  /* 照片高度：改这里 */
+
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 8px;
 }
 
-/* 标题风格 */
-.members-fw h2{
-  margin: 8px 0 14px;
-  padding-left: 10px;
-  border-left: 4px solid #1f4e79;
-}
+/* 标题 */
 .members-fw h2{
   margin: 10px 0 12px;
+  padding-left: 10px;
+  border-left: 4px solid #1f4e79;
+  line-height: 1.25;
 }
 
 /* 分隔线 */
-.members-sep{
+.members-fw .members-sep{
   border: 0;
   border-top: 1px solid #e5e7eb;
   margin: 20px 0;
 }
 
-/* 网格：教师3列，学生4列 */
-.faculty-grid{
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 220px));
-  gap: 20px;
-  justify-content: center;
-  align-items: start;
+/* 网格 */
+.members-fw .faculty-grid,
+.members-fw .member-grid{
+  display: grid !important;
+  gap: 16px !important;
+  justify-content: center !important;
+  align-items: start !important;
   margin: 10px 0 18px;
 }
 
-.member-grid{
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 220px));
-  gap: 20px;
-  justify-content: center;
-  align-items: start;
-  margin: 10px 0 18px;
-}
-
-/* 卡片 */
-.faculty-card,
-.member-card{
-  border: 1px solid #e5e7eb;
-  background: #f9fafb;
-}
-
-.faculty-photo-shell,
-.member-photo-shell{
-  padding: 8px;
-  background: #efefef;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-/* 关键：教师和学生照片统一尺寸（同一比例） */
-.faculty-photo,
-.member-photo{
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  height: auto;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  background: #e5e7eb;
-}
-
-/* 名字样式统一 */
-.faculty-name,
-.member-name{
-  text-align: center;
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: #374151;
-  line-height: 1.35;
-  padding: 10px 6px 12px;
-  background: #f3f4f6;
-  border-top: 1px solid #e5e7eb;
-}
-
-/* 教师附加信息 */
-.faculty-info{
-  text-align: center;
-  padding: 10px 10px 12px;
-  background: #fff;
-  min-height: 68px;
-}
-.faculty-info p{
-  margin: 4px 0;
-}
-.faculty-info a{
-  color: #1f4e79;
-  text-decoration: none;
-}
-.faculty-info a:hover{
-  text-decoration: underline;
-}
-
-/* 响应式 */
-@media (max-width: 1200px){
-  .faculty-grid{ grid-template-columns: repeat(3, minmax(0, 210px)); }
-  .member-grid{  grid-template-columns: repeat(3, minmax(0, 210px)); }
-}
-@media (max-width: 900px){
-  .faculty-grid{ grid-template-columns: repeat(2, minmax(0, 210px)); }
-  .member-grid{  grid-template-columns: repeat(2, minmax(0, 210px)); }
-}
-@media (max-width: 560px){
-  .faculty-grid,
-  .member-grid{ grid-template-columns: 1fr; }
-  .faculty-card,
-  .member-card{ max-width: 260px; margin: 0 auto; }
-}
-/* ===== 缩小成员照片尺寸（放在 members.md <style> 最后）===== */
-.members-page .members-fw{
-  --card-w: 150px;   /* 原来 220，改小 */
-  --photo-h: 200px;  /* 原来 300，改小 */
-}
-
-/* 网格列宽 */
-.members-page .members-fw .faculty-grid{
+.members-fw .faculty-grid{
   grid-template-columns: repeat(3, var(--card-w)) !important;
 }
-.members-page .members-fw .member-grid{
+.members-fw .member-grid{
   grid-template-columns: repeat(4, var(--card-w)) !important;
 }
 
-/* 卡片宽度 */
-.members-page .members-fw .faculty-card,
-.members-page .members-fw .member-card{
+/* 卡片 */
+.members-fw .faculty-card,
+.members-fw .member-card{
   width: var(--card-w) !important;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  box-sizing: border-box;
 }
 
-/* 照片容器高度 */
-.members-page .members-fw .faculty-photo-shell,
-.members-page .members-fw .member-photo-shell{
+/* 关键：统一照片容器（固定尺寸） */
+.members-fw .faculty-photo-shell,
+.members-fw .member-photo-shell{
+  position: relative !important;
+  width: var(--card-w) !important;
   height: var(--photo-h) !important;
   padding: 0 !important;
   overflow: hidden !important;
+  background: #efefef;
+  border-bottom: 1px solid #e5e7eb;
+  box-sizing: border-box;
 }
 
-/* 图片填满容器 */
-.members-page .members-fw .faculty-photo,
-.members-page .members-fw .member-photo{
+/* 关键：图片填满容器 */
+.members-fw .faculty-photo,
+.members-fw .member-photo{
+  position: absolute !important;
+  inset: 0 !important;
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
   object-position: center top !important;
   display: block !important;
+  background: #e5e7eb;
 }
 
-/* 响应式也跟着缩小 */
+/* 名字 */
+.members-fw .faculty-name,
+.members-fw .member-name{
+  text-align: center;
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: #374151;
+  line-height: 1.35;
+  padding: 8px 6px 10px;
+  background: #f3f4f6;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* 教师附加信息 */
+.members-fw .faculty-info{
+  text-align: center;
+  padding: 8px 8px 10px;
+  background: #fff;
+  min-height: 56px;
+}
+.members-fw .faculty-info p{ margin: 4px 0; }
+.members-fw .faculty-info a{
+  color: #1f4e79;
+  text-decoration: none;
+}
+.members-fw .faculty-info a:hover{ text-decoration: underline; }
+
+/* 响应式 */
 @media (max-width: 1200px){
-  .members-page .members-fw .faculty-grid{
-    grid-template-columns: repeat(2, var(--card-w)) !important;
-  }
-  .members-page .members-fw .member-grid{
-    grid-template-columns: repeat(3, var(--card-w)) !important;
-  }
+  .members-fw .faculty-grid{ grid-template-columns: repeat(2, var(--card-w)) !important; }
+  .members-fw .member-grid{  grid-template-columns: repeat(3, var(--card-w)) !important; }
 }
 @media (max-width: 900px){
-  .members-page .members-fw .faculty-grid{
-    grid-template-columns: repeat(1, var(--card-w)) !important;
-  }
-  .members-page .members-fw .member-grid{
-    grid-template-columns: repeat(2, var(--card-w)) !important;
-  }
+  .members-fw .faculty-grid{ grid-template-columns: repeat(2, var(--card-w)) !important; }
+  .members-fw .member-grid{  grid-template-columns: repeat(2, var(--card-w)) !important; }
 }
 @media (max-width: 560px){
-  .members-page .members-fw .member-grid{
-    grid-template-columns: repeat(1, var(--card-w)) !important;
+  .members-fw .faculty-grid,
+  .members-fw .member-grid{ grid-template-columns: 1fr !important; }
+  .members-fw .faculty-card,
+  .members-fw .member-card{
+    width: var(--card-w) !important;
+    margin: 0 auto;
   }
 }
-
 </style>
+
 
 <div class="members-fw">
 
