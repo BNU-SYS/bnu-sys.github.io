@@ -445,7 +445,7 @@ $site-max-width: 1180px;
 /* 学生4列 */
 .members-page .member-grid {
   display: grid !important;
-  grid-template-columns: repeat(4, minmax(180px, 1fr)) !important;
+  grid-template-columns: repeat(6, minmax(180px, 1fr)) !important;
   gap: 20px !important;
   margin: 12px 0 24px;
 }
