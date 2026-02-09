@@ -125,6 +125,67 @@ description: "Star-Lab 课题组成员"
   .faculty-card,
   .member-card{ max-width: 260px; margin: 0 auto; }
 }
+/* ===== 缩小成员照片尺寸（放在 members.md <style> 最后）===== */
+.members-page .members-fw{
+  --card-w: 190px;   /* 原来 220，改小 */
+  --photo-h: 250px;  /* 原来 300，改小 */
+}
+
+/* 网格列宽 */
+.members-page .members-fw .faculty-grid{
+  grid-template-columns: repeat(3, var(--card-w)) !important;
+}
+.members-page .members-fw .member-grid{
+  grid-template-columns: repeat(4, var(--card-w)) !important;
+}
+
+/* 卡片宽度 */
+.members-page .members-fw .faculty-card,
+.members-page .members-fw .member-card{
+  width: var(--card-w) !important;
+}
+
+/* 照片容器高度 */
+.members-page .members-fw .faculty-photo-shell,
+.members-page .members-fw .member-photo-shell{
+  height: var(--photo-h) !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+/* 图片填满容器 */
+.members-page .members-fw .faculty-photo,
+.members-page .members-fw .member-photo{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center top !important;
+  display: block !important;
+}
+
+/* 响应式也跟着缩小 */
+@media (max-width: 1200px){
+  .members-page .members-fw .faculty-grid{
+    grid-template-columns: repeat(2, var(--card-w)) !important;
+  }
+  .members-page .members-fw .member-grid{
+    grid-template-columns: repeat(3, var(--card-w)) !important;
+  }
+}
+@media (max-width: 900px){
+  .members-page .members-fw .faculty-grid{
+    grid-template-columns: repeat(1, var(--card-w)) !important;
+  }
+  .members-page .members-fw .member-grid{
+    grid-template-columns: repeat(2, var(--card-w)) !important;
+  }
+}
+@media (max-width: 560px){
+  .members-page .members-fw .member-grid{
+    grid-template-columns: repeat(1, var(--card-w)) !important;
+  }
+}
+
 </style>
 
 <div class="members-fw">

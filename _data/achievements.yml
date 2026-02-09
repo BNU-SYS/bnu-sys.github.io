@@ -127,7 +127,7 @@ years:
       Unnaturalness
     venue: ACM Transactions on Software Engineering and Methodology
     year: 2025
-    thumb: /images/papers/An_Empirical_Study_on_the.jpg
+    thumb: /images/papers/An_Empirical_Study_on_the.png
     pdf: ''
     slides: ''
     doi: ''
@@ -215,7 +215,7 @@ years:
     title: 'pSpMv: precision-based sparse matrix partition and SpMV optimization'
     venue: CCF Transactions on High Performance Computing
     year: 2024
-    thumb: /images/papers/pSpMv_precision_based_sparse_matrix.jpg
+    thumb: /images/papers/pspmv.png
     pdf: ''
     slides: ''
     doi: ''
@@ -271,7 +271,7 @@ years:
     title: A systematic survey of general sparse matrix-matrix multiplication
     venue: ACM Computing Surveys
     year: 2023
-    thumb: /images/papers/A_systematic_survey_of_general.jpg
+    thumb: /images/papers/A_Systematic_Survey_of_General.png
     pdf: ''
     slides: ''
     doi: ''
@@ -317,7 +317,7 @@ years:
     venue: Proceedings of the 30th ACM Joint European Software Engineering Conference
       and Symposium on the Foundations of Software Engineering
     year: 2022
-    thumb: /images/papers/Do_bugs_lead_to_unnaturalness.jpg
+    thumb: /images/papers/Do_bugs_lead_to_unnaturalness.png
     pdf: ''
     slides: ''
     doi: ''
