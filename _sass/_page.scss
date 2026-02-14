@@ -776,7 +776,7 @@ $site-max-width: 1180px;
 
 .members-page .members-fw .member-grid {
   display: grid !important;
-  grid-template-columns: repeat(6, 220px) !important; /* 学生4列 */
+  grid-template-columns: repeat(4, 220px) !important; /* 学生4列 */
   gap: 20px !important;
   justify-content: start !important;
 }
