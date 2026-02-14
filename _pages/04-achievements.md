@@ -4,7 +4,7 @@ permalink: /achievements/
 layout: single
 author_profile: false
 classes: wide
-description: "Star-Lab 团队成果：论文、专利与软件。"
+description: "Star-Lab 团队成果：论文、开源项目、专利与软件。"
 ---
 
 {% for y in site.data.achievements.years %}
@@ -25,15 +25,38 @@ description: "Star-Lab 团队成果：论文、专利与软件。"
     <div class="ach-line"><strong>作者:</strong> {{ p.authors }}</div>
     <div class="ach-line"><strong>论文:</strong> {{ p.title }}</div>
     <div class="ach-line"><strong>期刊或会议:</strong> {{ p.venue }}</div>
-    <!-- <div class="ach-line"><strong>Year:</strong> {{ p.year }}</div> -->
+    {% if p.ccf %}<div class="ach-line"><strong>CCF等级:</strong> {{ p.ccf }}</div>{% endif %}
 
     <div class="ach-links">
       {% if p.pdf %}<a href="{{ p.pdf }}" target="_blank" rel="noopener">[PDF]</a>{% endif %}
+      {% if p.slides %}<a href="{{ p.slides }}" target="_blank" rel="noopener">[Slides]</a>{% endif %}
+      {% if p.doi %}<a href="{{ p.doi }}" target="_blank" rel="noopener">[DOI]</a>{% endif %}
+      {% if p.bib %}<a href="{{ p.bib }}" target="_blank" rel="noopener">[BibTeX]</a>{% endif %}
+      {% if p.code %}<a href="{{ p.code }}" target="_blank" rel="noopener">[Code]</a>{% endif %}
     </div>
   </div>
 </div>
 {% endfor %}
 {% endfor %}
+
+{% if site.data.achievements.opensource and site.data.achievements.opensource.size > 0 %}
+<h2 class="ach-module-title">开源项目</h2>
+<div class="ach-block">
+  <ul>
+    {% for o in site.data.achievements.opensource %}
+    <li>
+      <strong>{{ o.name }}</strong>
+      {% if o.desc %}：{{ o.desc }}{% endif %}
+      {% if o.year %}（{{ o.year }}）{% endif %}
+      {% if o.stars %}（⭐ {{ o.stars }}）{% endif %}
+      {% if o.link %}<a href="{{ o.link }}" target="_blank" rel="noopener">[仓库]</a>{% endif %}
+      {% if o.doc %}<a href="{{ o.doc }}" target="_blank" rel="noopener">[文档]</a>{% endif %}
+      {% if o.demo %}<a href="{{ o.demo }}" target="_blank" rel="noopener">[Demo]</a>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
 
 {% if site.data.achievements.patents and site.data.achievements.patents.size > 0 %}
 <h2 class="ach-module-title">专利</h2>
