@@ -1,5 +1,5 @@
 ---
-title: "成果展示"
+# title: "成果展示"
 permalink: /achievements/
 layout: single
 author_profile: false
@@ -10,7 +10,7 @@ description: "Star-Lab 团队成果：学术论文、开源项目、专利。"
 <!-- =========================
      模块1：教师 -> 学术论文
      ========================= -->
-<h2 class="ach-module-title">教师｜学术论文</h2>
+<h2 class="ach-module-title">学术论文</h2>
 
 {% for y in site.data.achievements.years %}
 <h2 class="ach-year">{{ y.year }}</h2>
@@ -34,9 +34,7 @@ description: "Star-Lab 团队成果：学术论文、开源项目、专利。"
 
     <div class="ach-links">
       {% if p.pdf %}<a href="{{ p.pdf }}" target="_blank" rel="noopener">[PDF]</a>{% endif %}
-      {% if p.doi %}<a href="{{ p.doi }}" target="_blank" rel="noopener">[DOI]</a>{% endif %}
-      {% if p.code %}<a href="{{ p.code }}" target="_blank" rel="noopener">[Code]</a>{% endif %}
-      {% if p.bib %}<a href="{{ p.bib }}" target="_blank" rel="noopener">[BibTeX]</a>{% endif %}
+
     </div>
   </div>
 </div>
@@ -46,7 +44,7 @@ description: "Star-Lab 团队成果：学术论文、开源项目、专利。"
 <!-- =========================
      模块2：博士生 -> 开源项目
      ========================= -->
-<h2 class="ach-module-title">博士生｜开源项目</h2>
+<h2 class="ach-module-title">开源项目</h2>
 
 {% if site.data.achievements.opensource and site.data.achievements.opensource.size > 0 %}
 <div class="ach-block">
@@ -73,7 +71,7 @@ description: "Star-Lab 团队成果：学术论文、开源项目、专利。"
 <!-- =========================
      模块3：硕士生 -> 专利
      ========================= -->
-<h2 class="ach-module-title">硕士生｜专利</h2>
+<h2 class="ach-module-title">专利</h2>
 
 {% if site.data.achievements.patents and site.data.achievements.patents.size > 0 %}
 <div class="ach-block">
