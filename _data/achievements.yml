@@ -20,6 +20,7 @@ years:
     title: 'Deep learning-based software engineering: progress, challenges, and opportunities'
     venue: Science China Information Sciences
     year: 2025
+    ccf: "A"
     thumb: /images/papers/Deep_Learning-based_Software.png
     pdf: ''
     slides: ''
@@ -30,6 +31,7 @@ years:
     title: 'RaNAS: Resource-aware neural architecture search for edge computing'
     venue: ACM Transactions on Architecture and Code Optimization
     year: 2025
+    ccf: "A"
     thumb: /images/papers/RaNAS_Resource_Aware_Neural_Architecture.jpg
     pdf: ''
     slides: ''
@@ -41,6 +43,7 @@ years:
     title: Automated Recommendation of Extracting Local Variable Refactorings
     venue: ACM Transactions on Software Engineering and Methodology
     year: 2025
+    ccf: "A"
     thumb: /images/papers/Automated_Recommendation_of_Extracting_Local.jpg
     pdf: ''
     slides: ''
@@ -51,6 +54,7 @@ years:
     title: Optimizing General Sparse Matrix-Matrix Multiplication on the GPU
     venue: ACM Transactions on Architecture and Code Optimization
     year: 2025
+    ccf: "A"
     thumb: /images/papers/Optimizing_General_Sparse_Matrix_Matrix.jpg
     pdf: ''
     slides: ''
@@ -59,7 +63,7 @@ years:
     code: ''
   - authors: Ge, Danying, Gao, Jianhua, Yang, Yixue, Ji, Weixing
     title: 'HA-RAG: Hotness-Aware RAG Acceleration via Mixed Precision and Data Placement'
-    venue: arXiv preprint arXiv:2510.20878
+    venue: Preprint
     year: 2025
     thumb: /images/papers/HA_RAG_Hotness_Aware_RAG_Acceleration.jpg
     pdf: ''
