@@ -4,7 +4,7 @@ permalink: /activities/
 layout: single
 author_profile: false
 classes: wide news-page
-description: "Star-Lab 团队新闻：团建活动、学术会议/报告、竞赛获奖"
+description: "BNU-SYS 团队新闻：团建活动、学术会议/报告、竞赛获奖"
 ---
 
 <!-- <div class="news-index-nav">

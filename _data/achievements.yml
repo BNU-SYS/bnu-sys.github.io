@@ -258,7 +258,7 @@ years:
       on GPUs
     venue: The International Journal of High Performance Computing Applications
     year: 2024
-    ccf: "C"
+    ccf: "None"
     thumb: /images/papers/Predicting_optimal_sparse_general.jpg
     pdf: ''
     slides: ''
@@ -279,6 +279,7 @@ years:
     title: Optimization of sparse matrix-vector multiplication based on FPGA and row
       folding
     venue: Computer Engineering \& Science
+    ccf: "None"
     year: 2024
     thumb: /images/papers/Optimization_of_sparsematrix_vector.jpg
     pdf: ''
@@ -292,6 +293,7 @@ years:
       Zeming, Wang, Yizhuo
     title: A systematic survey of general sparse matrix-matrix multiplication
     venue: ACM Computing Surveys
+    ccf: "A"
     year: 2023
     thumb: /images/papers/A_Systematic_Survey_of_General.png
     pdf: ''
@@ -314,7 +316,8 @@ years:
   - authors: Bai, Lu, Ji, Weixing, Li, Qinyuan, Yao, Xilai, Xin, Wei, Zhu, Wanyi
     title: 'Dnnabacus: Toward accurate computational cost prediction for deep neural
       networks'
-    venue: arXiv preprint arXiv:2205.12095
+    venue: Preprint
+    ccf: "None"
     year: 2022
     thumb: /images/papers/DNNAbacus_Toward_Accurate_Computational_Cost_Prediction.jpg
     pdf: ''
@@ -326,6 +329,7 @@ years:
     title: 'TaiChi: A hybrid compression format for binary sparse matrix-vector multiplication
       on GPU'
     venue: IEEE Transactions on Parallel and Distributed Systems
+    ccf: "A"
     year: 2022
     thumb: /images/papers/TaiChi_A_Hybrid_Compression_Format.jpg
     pdf: ''
@@ -336,8 +340,9 @@ years:
   - authors: Jiang, Yanjie, Liu, Hui, Zhang, Yuxia, Ji, Weixing, Zhong, Hao, Zhang,
       Lu
     title: Do bugs lead to unnaturalness of source code?
-    venue: Proceedings of the 30th ACM Joint European Software Engineering Conference
+    venue: ACM Joint European Software Engineering Conference
       and Symposium on the Foundations of Software Engineering
+    ccf: "A"
     year: 2022
     thumb: /images/papers/Do_bugs_lead_to_unnaturalness.png
     pdf: ''
@@ -347,9 +352,8 @@ years:
     code: ''
   - authors: Shao, Senhao, Wang, Yizhuo, Ji, Weixing, Gao, Jianhua
     title: Towards Optimal Fast Matrix
-    venue: 'Parallel and Distributed Computing, Applications and Technologies: 22nd
-      International Conference, PDCAT 2021, Guangzhou, China, December 17--19, 2021,
-      Proceedings'
+    venue: International Conference on Parallel and Distributed Computing, Applications and Technologies
+    ccf: "A"
     year: 2022
     thumb: /images/papers/Towards_Optimal_Fast_Matrix.jpg
     pdf: ''
