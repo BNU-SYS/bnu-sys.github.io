@@ -336,5 +336,12 @@ years:
     doi: ''
     bibtex: ''
     code: ''
+opensource:
+  - name: "StarInfer"
+    desc: "面向大模型推理优化的高性能工具链"
+    year: 2026
+    stars: 312
+    link: "https://github.com/xxx/starinfer"
+    doc: "https://xxx.github.io/starinfer-doc"
 patents: []
 software: []
