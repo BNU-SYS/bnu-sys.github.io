@@ -64,6 +64,7 @@ years:
   - authors: Ge, Danying, Gao, Jianhua, Yang, Yixue, Ji, Weixing
     title: 'HA-RAG: Hotness-Aware RAG Acceleration via Mixed Precision and Data Placement'
     venue: Preprint
+    ccf: "None"
     year: 2025
     thumb: /images/papers/HA_RAG_Hotness_Aware_RAG_Acceleration.jpg
     pdf: ''
@@ -75,6 +76,7 @@ years:
       Ji, Wei-Xing, Liu, Hui
     title: 'ValExtractor: Reliable Automated Local Variable Extraction in Code Refactoring'
     venue: Journal of Computer Science and Technology
+    ccf: "B"
     year: 2025
     thumb: /images/papers/ValExtractor_Reliable_Automated_Local_Variable.jpg
     pdf: ''
@@ -84,7 +86,8 @@ years:
     code: ''
   - authors: Ge, Danying, Gao, Jianhua, Jiang, Qizhi, Feng, Yifei, Ji, Weixing
     title: Automatic Task Detection and Heterogeneous LLM Speculative Decoding
-    venue: arXiv preprint arXiv:2505.08600
+    venue: Preprint
+    ccf: "None"
     year: 2025
     thumb: /images/papers/Automatic_Task_Detection_and_Heterogeneous.jpg
     pdf: ''
@@ -96,6 +99,7 @@ years:
     title: Adaptive point cloud compression based on precision-aware floating-point
       encoding
     venue: CCF Transactions on High Performance Computing
+    ccf: "C"
     year: 2025
     thumb: /images/papers/Adaptive_point_cloud_compression_based.jpg
     pdf: ''
@@ -107,6 +111,7 @@ years:
     title: 'Detection of Resource Leaks in Java Programs: Effectiveness Analysis of
       Traditional Models and Language Models.'
     venue: International Journal of Software \& Informatics
+    ccf: "None"
     year: 2025
     thumb: /images/papers/Detection_of_Resource_Leaks_in_Java_Programs.jpg
     pdf: ''
@@ -119,6 +124,7 @@ years:
     title: 'PTPS: Precision-Aware Task Partitioning and Scheduling for SpMV on CPU-FPGA
       Heterogeneous Platforms'
     venue: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems
+    ccf: "A"
     year: 2025
     thumb: /images/papers/PTPS_Precision_Aware_Task_Partitioning.jpg
     pdf: ''
@@ -131,6 +137,7 @@ years:
     title: An Empirical Study on the Relationship Between Defects and Source Code’s
       Unnaturalness
     venue: ACM Transactions on Software Engineering and Methodology
+    ccf: "A"
     year: 2025
     thumb: /images/papers/An_Empirical_Study_on_the.png
     pdf: ''
@@ -142,7 +149,8 @@ years:
   papers:
   - authors: Gao, Jianhua, Liu, Bingjie, Ji, Weixing, Huang, Hua
     title: A systematic literature survey of sparse matrix-vector multiplication
-    venue: arXiv preprint arXiv:2404.06047
+    venue: Preprint
+    ccf: "None"
     year: 2024
     thumb: /images/papers/A_Systematic_Literature_Survey_of_Sparse.jpg
     pdf: ''
@@ -154,6 +162,7 @@ years:
     title: Optimization of large-scale sparse matrix-vector multiplication on multi-gpu
       systems
     venue: ACM Transactions on Architecture and Code Optimization
+    ccf: "A"
     year: 2024
     thumb: /images/papers/Optimization_of_Large_Scale_Sparse.jpg
     pdf: ''
@@ -165,6 +174,7 @@ years:
     title: 'Revisiting thread configuration of SpMV kernels on GPU: A machine learning
       based approach'
     venue: Journal of Parallel and Distributed Computing
+    ccf: "B"
     year: 2024
     thumb: /images/papers/Revisiting_thread_configuration_of_SpMV.jpg
     pdf: ''
@@ -175,6 +185,7 @@ years:
   - authors: Wang, Yizhuo, Chang, Fangli, Wei, Bingxin, Gao, Jianhua, Ji, Weixing
     title: Optimization of sparse matrix computation for algebraic multigrid on gpus
     venue: ACM Transactions on Architecture and Code Optimization
+    ccf: "A"
     year: 2024
     thumb: /images/papers/Optimizing_General_Sparse_Matrix_Matrix.jpg
     pdf: ''
@@ -186,7 +197,8 @@ years:
       Liu, Hui, Peng, Haiyang, Wang, Yuxuan
     title: 'Jleaks: A featured resource leak repository collected from hundreds of
       open-source java projects'
-    venue: Proceedings of the IEEE/ACM 46th International Conference on Software Engineering
+    venue: International Conference on Software Engineering
+    ccf: "A"
     year: 2024
     thumb: /images/papers/JLeaks_A_Featured_Resource_Leak.jpg
     pdf: ''
@@ -198,6 +210,7 @@ years:
     title: 'ConvDarts: A fast and exact convolutional algorithm selector for deep
       learning frameworks'
     venue: CCF Transactions on High Performance Computing
+    ccf: "C"
     year: 2024
     thumb: /images/papers/Cascaded_Prediction_and_Asynchronous_Execution.jpg
     pdf: ''
@@ -208,7 +221,8 @@ years:
   - authors: Gao, Jianhua, Shen, Jiayuan, Zhang, Yuxiang, Ji, Weixing, Huang, Hua
     title: Precision-Aware Iterative Algorithms Based on Group-Shared Exponents of
       Floating-Point Numbers
-    venue: arXiv preprint arXiv:2411.04686
+    venue: Preprint
+    ccf: "None"
     year: 2024
     thumb: /images/papers/Precision_Aware_Iterative_Algorithms_Based.jpg
     pdf: ''
@@ -219,6 +233,7 @@ years:
   - authors: Liu, Jie, Wang, Yizhuo, Gao, Jianhua, Ji, Weixing
     title: 'pSpMv: precision-based sparse matrix partition and SpMV optimization'
     venue: CCF Transactions on High Performance Computing
+    ccf: "C"
     year: 2024
     thumb: /images/papers/pspmv.png
     pdf: ''
@@ -229,7 +244,8 @@ years:
   - authors: Gao, Jianhua, Liu, Bingjie, Wang, Yizhuo, Ji, Weixing, Huang, Hua
     title: Cascaded Prediction and Asynchronous Execution of Iterative Algorithms
       on Heterogeneous Platforms
-    venue: arXiv preprint arXiv:2411.10143
+    venue: Preprint
+    ccf: "None"
     year: 2024
     thumb: /images/papers/Cascaded_Prediction_and_Asynchronous_Execution.jpg
     pdf: ''
@@ -242,6 +258,7 @@ years:
       on GPUs
     venue: The International Journal of High Performance Computing Applications
     year: 2024
+    ccf: "C"
     thumb: /images/papers/Predicting_optimal_sparse_general.jpg
     pdf: ''
     slides: ''
