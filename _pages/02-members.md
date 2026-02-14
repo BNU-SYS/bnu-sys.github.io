@@ -14,7 +14,7 @@ description: "Star-Lab 课题组成员"
 .members-fw{
   --card-w: 132px;   /* 原 150 -> 进一步缩小 */
   --photo-h: 176px;  /* 原 200 -> 进一步缩小 */
-  --gap-x: 30px;     /* 横向间距增大 */
+  --gap-x: 40px;     /* 横向间距增大 */
   --gap-y: 20px;     /* 纵向间距（可按需调） */
 
   max-width: 1240px;
