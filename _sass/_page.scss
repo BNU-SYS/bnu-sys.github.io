@@ -864,5 +864,21 @@ $site-max-width: 1180px;
   border-bottom: none !important;      /* 不要 h2 默认下划线就保留 */
   padding-bottom: 0 !important;
 }
+/* ===== Global text color: black ===== */
+html, body,
+.page, .page__content,
+.page__content p, .page__content li, .page__content span,
+.page__content h1, .page__content h2, .page__content h3, .page__content h4, .page__content h5, .page__content h6,
+.page__content dt, .page__content dd,
+.page__content strong, .page__content em,
+.page__meta, .archive__item-excerpt, .archive__item-teaser {
+  color: #000 !important;
+}
+
+/* 保留链接为蓝色（否则全黑会影响可用性） */
+.page__content a,
+a {
+  color: #1f4e79 !important;
+}
 
 
