@@ -203,7 +203,7 @@ description: "Star-Lab 课题组成员"
 <div class="member-grid">
   <div class="member-card">
     <div class="member-photo-shell">
-      <img class="member-photo" src="{{ '/images/members/liu-bingxin.jpg' | relative_url }}" alt="刘秉鑫"
+      <img class="member-photo" src="{{ '/images/members/liubingxin.jpg' | relative_url }}" alt="刘秉鑫"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
     <div class="member-name">刘秉鑫<br>（2024级）</div>
