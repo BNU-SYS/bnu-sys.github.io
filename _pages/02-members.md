@@ -1,5 +1,5 @@
 ---
-title: "成员介绍"
+title: "团队成员"
 permalink: /members/
 layout: single
 author_profile: false
@@ -232,6 +232,14 @@ description: "Star-Lab 课题组成员"
     </div>
     <div class="member-name">刘敬民<br>（2025级）</div>
   </div>
+
+  <div class="member-card">
+    <div class="member-photo-shell">
+      <img class="member-photo member-photo-full" src="{{ '/images/members/bai-lu.jpg' | relative_url }}" alt="白璐"
+           onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
+    </div>
+    <div class="member-name">白璐<br>（2026级）</div>
+  </div>
 </div>
 
 <hr class="members-sep" />
@@ -239,14 +247,6 @@ description: "Star-Lab 课题组成员"
 <h2 class="members-subtitle">硕士生</h2>
 
 <div class="master-grid">
-  <div class="member-card">
-    <div class="member-photo-shell">
-      <img class="member-photo" src="{{ '/images/members/zhang-yuxiang.jpg' | relative_url }}" alt="张寓祥"
-           onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
-    </div>
-    <div class="member-name">张寓祥<br>（2023级）</div>
-  </div>
-
   <div class="member-card">
     <div class="member-photo-shell">
       <img class="member-photo" src="{{ '/images/members/huang-yinghui.jpg' | relative_url }}" alt="黄颖晖"
@@ -309,6 +309,63 @@ description: "Star-Lab 课题组成员"
            onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
     </div>
     <div class="member-name">欧学谦<br>（2025级）</div>
+  </div>
+
+  <div class="member-card">
+    <div class="member-photo-shell">
+      <img class="member-photo" src="{{ '/images/members/guo-jianfeng.jpg' | relative_url }}" alt="郭健峰"
+           onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
+    </div>
+    <div class="member-name">郭健峰<br>（2026级）</div>
+  </div>
+
+  <div class="member-card">
+    <div class="member-photo-shell">
+      <img class="member-photo" src="{{ '/images/members/wang-xinyue.jpg' | relative_url }}" alt="王心悦"
+           onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
+    </div>
+    <div class="member-name">王心悦<br>（2026级）</div>
+  </div>
+
+  <div class="member-card">
+    <div class="member-photo-shell">
+      <img class="member-photo" src="{{ '/images/members/jia-renwu.jpg' | relative_url }}" alt="贾人舞"
+           onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
+    </div>
+    <div class="member-name">贾人舞<br>（2026级）</div>
+  </div>
+
+  <div class="member-card">
+    <div class="member-photo-shell">
+      <img class="member-photo" src="{{ '/images/members/fu-junlin.jpg' | relative_url }}" alt="傅俊林"
+           onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
+    </div>
+    <div class="member-name">傅俊林<br>（2026级）</div>
+  </div>
+
+  <div class="member-card">
+    <div class="member-photo-shell">
+      <img class="member-photo" src="{{ '/images/members/ma-yinglin.jpg' | relative_url }}" alt="马英粼"
+           onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
+    </div>
+    <div class="member-name">马英粼<br>（2026级）</div>
+  </div>
+</div>
+
+<hr class="members-sep" />
+
+<h2 class="members-subtitle">毕业生</h2>
+
+<div class="master-grid">
+  <div class="member-card">
+    <div class="member-photo-shell">
+      <img class="member-photo" src="{{ '/images/members/zhang-yuxiang.jpg' | relative_url }}" alt="张寓祥"
+           onerror="this.onerror=null;this.src='{{ '/images/members/default.jpg' | relative_url }}';">
+    </div>
+    <div class="member-name">张寓祥<br>（2023级）</div>
+    <div class="faculty-info">
+      <p>就业去向：携程 · 软件工程师</p>
+    </div>
   </div>
 </div>
 

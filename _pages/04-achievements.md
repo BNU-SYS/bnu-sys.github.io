@@ -1,14 +1,14 @@
 ---
-# title: "成果展示"
+title: "论文成果"
 permalink: /achievements/
 layout: single
 author_profile: false
 classes: wide
-description: "Star-Lab 团队成果：学术论文、开源项目、专利。"
+description: "BNU-SYS 团队成果：学术论文、专利。"
 ---
 
 <!-- =========================
-     模块1：教师 -> 学术论文
+     模块1：学术论文
      ========================= -->
 <h2 class="ach-module-title">学术论文</h2>
 
@@ -33,8 +33,11 @@ description: "Star-Lab 团队成果：学术论文、开源项目、专利。"
     {% if p.ccf %}<div class="ach-line"><strong>CCF等级:</strong> {{ p.ccf }}</div>{% endif %}
 
     <div class="ach-links">
-      {% if p.pdf %}<a href="{{ p.pdf }}" target="_blank" rel="noopener">[PDF]</a>{% endif %}
-
+      {% if p.pdf and p.pdf != '' %}<a href="{{ p.pdf }}" target="_blank" rel="noopener">[PDF]</a>{% else %}<span class="ach-link-off">[PDF]</span>{% endif %}
+      {% if p.slides and p.slides != '' %}<a href="{{ p.slides }}" target="_blank" rel="noopener">[Slides]</a>{% else %}<span class="ach-link-off">[Slides]</span>{% endif %}
+      {% if p.doi and p.doi != '' %}<a href="{{ p.doi }}" target="_blank" rel="noopener">[DOI]</a>{% else %}<span class="ach-link-off">[DOI]</span>{% endif %}
+      {% if p.bibtex and p.bibtex != '' %}<a href="{{ p.bibtex }}" target="_blank" rel="noopener">[Bibtex]</a>{% else %}<span class="ach-link-off">[Bibtex]</span>{% endif %}
+      {% if p.code and p.code != '' %}<a href="{{ p.code }}" target="_blank" rel="noopener">[Code]</a>{% else %}<span class="ach-link-off">[Code]</span>{% endif %}
     </div>
   </div>
 </div>
@@ -42,51 +45,24 @@ description: "Star-Lab 团队成果：学术论文、开源项目、专利。"
 {% endfor %}
 
 <!-- =========================
-     模块2：博士生 -> 开源项目
-     ========================= -->
-<h2 class="ach-module-title">开源项目</h2>
-
-{% if site.data.achievements.opensource and site.data.achievements.opensource.size > 0 %}
-<div class="ach-block">
-  <ul>
-    {% for o in site.data.achievements.opensource %}
-    <li>
-      <strong>{{ o.name }}</strong>
-      {% if o.desc %}：{{ o.desc }}{% endif %}
-      {% if o.year %}（{{ o.year }}）{% endif %}
-      {% if o.stars %}（⭐ {{ o.stars }}）{% endif %}
-      {% if o.link %}<a href="{{ o.link }}" target="_blank" rel="noopener">[仓库]</a>{% endif %}
-      {% if o.doc %}<a href="{{ o.doc }}" target="_blank" rel="noopener">[文档]</a>{% endif %}
-      {% if o.demo %}<a href="{{ o.demo }}" target="_blank" rel="noopener">[Demo]</a>{% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-</div>
-{% else %}
-<div class="ach-block">
-  <p>暂无开源项目。</p>
-</div>
-{% endif %}
-
-<!-- =========================
-     模块3：硕士生 -> 专利
+     模块2：专利
      ========================= -->
 <h2 class="ach-module-title">专利</h2>
 
 {% if site.data.achievements.patents and site.data.achievements.patents.size > 0 %}
 <div class="ach-block">
-  <ul>
-    {% for t in site.data.achievements.patents %}
-    <li>
-      <strong>{{ t.name }}</strong>
-      {% if t.type %}（{{ t.type }}{% endif %}
-      {% if t.year %}，{{ t.year }}{% endif %}
-      {% if t.number %}，{{ t.number }}{% endif %}
-      {% if t.type %}）{% endif %}
-      {% if t.link %}<a href="{{ t.link }}" target="_blank" rel="noopener">[链接]</a>{% endif %}
-    </li>
-    {% endfor %}
-  </ul>
+  {% for t in site.data.achievements.patents %}
+  <div class="ach-patent">
+    <div class="ach-line"><strong>发明人:</strong> {{ t.inventors }}</div>
+    <div class="ach-line"><strong>专利:</strong> {{ t.title }}</div>
+    <div class="ach-line"><strong>专利号:</strong> {{ t.number }}{% if t.pub_no %}（公开号：{{ t.pub_no }}）{% endif %}</div>
+    {% if t.status %}<div class="ach-line"><strong>状态:</strong> {{ t.status }}{% if t.grant_date %}，{{ t.grant_date }}{% endif %}</div>{% endif %}
+
+    <div class="ach-links">
+      {% if t.html and t.html != '' %}<a href="{{ t.html }}" target="_blank" rel="noopener">[HTML]</a>{% else %}<span class="ach-link-off">[HTML]</span>{% endif %}
+    </div>
+  </div>
+  {% endfor %}
 </div>
 {% else %}
 <div class="ach-block">

@@ -1,2 +1,7 @@
 _site/
+materials/
+.sass-cache/
+_config.local.yml
+pdf_src/
+学术成果/
 

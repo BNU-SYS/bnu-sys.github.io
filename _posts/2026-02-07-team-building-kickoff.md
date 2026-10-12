@@ -1,8 +1,10 @@
 ---
 title: "BNU-SYS 举办【2025年终总结】活动，回顾2025，展望2026"
 date: 2026-02-09
+lang: zh
 categories: [news, team-building]
 tags: [团队新闻, 年终总结, BNU-SYS, 科研规划]
+alt_en: /en/team-building-kickoff/
 excerpt: "BNU-SYS 组织开展 2025 年终总结活动，系统回顾年度科研与团队建设成果，明确 2026 年重点方向与协同机制。"
 ---
 

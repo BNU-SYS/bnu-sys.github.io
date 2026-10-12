@@ -593,9 +593,57 @@ $site-max-width: 1180px;
   color: #6b7280;
 }
 
+.news-card.has-cover {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 18px;
+  align-items: start;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  padding: 12px 14px;
+  border-radius: 4px;
+}
+
+.news-card.has-cover .news-thumb {
+  width: 100%;
+  height: 130px;
+  border: 1px solid #e5e7eb;
+  background: #f8fafc;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-card.has-cover .news-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.news-card.has-cover h3 {
+  margin-top: 0;
+}
+
+.news-card.has-cover .news-body {
+  min-width: 0;
+}
+
 @media (max-width: 900px) {
   .news-page .news-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .news-card.has-cover {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .news-card.has-cover .news-thumb {
+    height: 160px;
   }
 }
 
@@ -658,6 +706,13 @@ $site-max-width: 1180px;
   text-decoration: none;
 }
 
+.ach-links .ach-link-off {
+  margin-right: 10px;
+  font-weight: 700;
+  color: #c2c6cc;
+  cursor: not-allowed;
+}
+
 .ach-module-title {
   margin-top: 2rem;
   margin-bottom: 0.7rem;
@@ -669,6 +724,15 @@ $site-max-width: 1180px;
   border: 1px solid #e5e7eb;
   background: #fff;
   padding: 12px 16px;
+}
+
+.ach-patent {
+  padding: 10px 0;
+  border-bottom: 1px solid #eef0f2;
+}
+
+.ach-patent:last-child {
+  border-bottom: 0;
 }
 
 @media (max-width: 900px) {
@@ -880,5 +944,108 @@ html, body,
 a {
   color: #1f4e79 !important;
 }
+
+/* ==========================================================================
+   BNU-SYS 首页：Hero（大标题 + 简短 overview）
+   ========================================================================== */
+.news-page .page__title {
+  margin-bottom: 0.25em;
+}
+
+.home-hero {
+  margin: 0 0 24px 0;
+  padding: 0 0 16px 0;
+  border-bottom: 1px solid #eceff1;
+}
+
+.home-hero__lead {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #374151;
+  text-align: justify;
+}
+
+/* ==========================================================================
+   BNU-SYS 首页：课题组合影（自动横向滚动，悬停暂停）
+   ========================================================================== */
+.group-marquee {
+  position: relative;
+  overflow: hidden;
+  margin: 14px 0 8px;
+  padding: 12px 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.group-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: bnu-marquee 45s linear infinite;
+}
+
+.group-marquee:hover .group-marquee__track {
+  animation-play-state: paused;
+}
+
+.group-marquee__img {
+  height: 220px;
+  width: auto;
+  margin-right: 14px;   /* 用 margin 而非 gap，保证位移 50% 时无缝衔接 */
+  border-radius: 6px;
+  display: block;
+  object-fit: cover;
+}
+
+@keyframes bnu-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@media (max-width: 700px) {
+  .group-marquee__img {
+    height: 150px;
+    margin-right: 10px;
+  }
+}
+
+/* ==========================================================================
+   BNU-SYS 首页：最新论文
+   ========================================================================== */
+.latest-papers {
+  margin: 6px 0 8px;
+}
+
+.latest-paper {
+  padding: 12px 0;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+.latest-paper:last-child {
+  border-bottom: 0;
+}
+
+.latest-paper__title {
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.latest-paper__meta {
+  color: #6b7280;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.latest-paper__links {
+  margin-top: 4px;
+  font-size: 0.92rem;
+}
+
+.latest-paper__links a {
+  margin-right: 10px;
+}
+
 
 

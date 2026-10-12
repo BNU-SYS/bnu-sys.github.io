@@ -1,16 +1,12 @@
 main:
   - title: "团队简介"
-    url: /
+    url: /about/
 
   - title: "团队成员"
     url: /members/
 
-  - title: "团队成果"
+  - title: "学术成果"
     url: /achievements/
 
-  - title: "团队新闻"
-    url: /activities/
-    
-  - title: "团队招募"
-    url: /recruitment/
-
+  - title: "开源软件"
+    url: /software/

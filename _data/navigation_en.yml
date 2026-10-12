@@ -1,0 +1,12 @@
+main:
+  - title: "About"
+    url: /en/about/
+
+  - title: "People"
+    url: /en/members/
+
+  - title: "Publication"
+    url: /en/achievements/
+
+  - title: "Software"
+    url: /en/software/

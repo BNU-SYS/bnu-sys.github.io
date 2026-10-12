@@ -51,3 +51,138 @@
     font-weight: 700;
   }
 }
+
+/* ==========================================================================
+   BNU-SYS 顶部：Welcome 条 + 青色导航条
+   ========================================================================== */
+
+/* 想改导航条颜色，只改这一行即可 */
+$brand-nav: #2e5a88;
+
+/* 上：白底，左侧校徽 + 居中 Welcome */
+.masthead__topbar {
+  background: #fff;
+  border-bottom: 1px solid #eceff1;
+}
+
+.masthead__topbar-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 1em !important;
+}
+
+.masthead__logo-link {
+  position: absolute;
+  left: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.masthead__logo {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+.masthead__welcome {
+  font-family: $sans-serif-narrow;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+/* 下：青色导航条，白字 */
+.masthead__navbar {
+  background: $brand-nav;
+}
+
+.masthead__navbar .masthead__inner-wrap {
+  padding: 0.35em 1em !important;
+}
+
+.masthead__navbar .greedy-nav {
+  background: transparent;
+}
+
+.masthead__navbar .greedy-nav .visible-links {
+  margin: 0 auto;
+}
+
+.masthead__navbar .greedy-nav a,
+.masthead__navbar .masthead__menu-item a {
+  color: #fff !important;
+}
+
+.masthead__navbar .greedy-nav a:hover {
+  color: #fff !important;
+  opacity: 0.85;
+}
+
+.masthead__navbar .greedy-nav .visible-links a:before {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.masthead__navbar .greedy-nav button {
+  background-color: transparent;
+}
+
+/* 窄屏汉堡菜单图标：白色，保证在青色底上可见 */
+.masthead__navbar .greedy-nav .navicon,
+.masthead__navbar .greedy-nav .navicon:before,
+.masthead__navbar .greedy-nav .navicon:after {
+  background: #fff;
+}
+
+/* 窄屏汉堡下拉菜单：白底，链接需用深色（否则白字白底看不见） */
+.masthead__navbar .greedy-nav .hidden-links a,
+.masthead__navbar .greedy-nav .hidden-links a:hover {
+  color: $masthead-link-color !important;
+}
+
+/* 顶部右侧：语言切换 */
+.masthead__lang {
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: $sans-serif-narrow;
+  font-size: 0.85rem;
+}
+
+.masthead__lang a {
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.masthead__lang a.is-active {
+  color: $brand-nav;
+  font-weight: 700;
+}
+
+.masthead__lang a:hover {
+  color: $brand-nav;
+}
+
+.masthead__lang-sep {
+  color: #cbd5e1;
+}
+
+@media (max-width: 700px) {
+  .masthead__logo {
+    height: 34px;
+  }
+  .masthead__welcome {
+    font-size: 0.95rem;
+  }
+  .masthead__lang {
+    font-size: 0.72rem;
+    gap: 4px;
+  }
+}
